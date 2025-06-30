@@ -1,0 +1,42 @@
+[
+    {
+        "cust_id": "CUST001",
+        "full_name": "John Smith",
+        "residence_address": "123 Main St",
+        "date_of_birth": "1980-01-15",
+        "email": "john.smith@email.com",
+        "phone": "555-0123"
+    },
+    {
+        "cust_id": "CUST002",
+        "full_name": "Jane Doe",
+        "residence_address": "456 Oak Ave",
+        "date_of_birth": "1985-03-20",
+        "email": "jane.doe@email.com",
+        "phone": "555-0124"
+    },
+    {
+        "cust_id": "CUST003",
+        "full_name": "Robert Johnson",
+        "residence_address": "789 Pine Rd",
+        "date_of_birth": "1975-07-10",
+        "email": "robert.j@email.com",
+        "phone": "555-0125"
+    },
+    {
+        "cust_id": "CUST004",
+        "full_name": "Johnny Smith",
+        "residence_address": "321 Elm St",
+        "date_of_birth": "1982-11-30",
+        "email": "johnny.s@email.com",
+        "phone": "555-0126"
+    },
+    {
+        "cust_id": "CUST005",
+        "full_name": "Sarah Williams",
+        "residence_address": "654 Maple Dr",
+        "date_of_birth": "1990-05-15",
+        "email": "sarah.w@email.com",
+        "phone": "555-0127"
+    }
+] 

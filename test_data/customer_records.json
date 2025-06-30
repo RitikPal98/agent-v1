@@ -1,0 +1,47 @@
+[
+    {
+        "customer_id": "CUST001",
+        "full_name": "Gaurav Smith",
+        "customer_name": "Gaurav Smith",
+        "street_address": "123 Main St, Delhi",
+        "date_of_birth": "1990-05-15",
+        "phone_number": "9876543210",
+        "email": "gaurav.smith@email.com"
+    },
+    {
+        "customer_id": "CUST002",
+        "full_name": "Priya Sharma",
+        "customer_name": "P. Sharma",
+        "street_address": "456 Park Ave, Mumbai",
+        "date_of_birth": "1985-08-22",
+        "phone_number": "9876543211",
+        "email": "priya@email.com"
+    },
+    {
+        "customer_id": "CUST003",
+        "full_name": "William Robert Smith",
+        "customer_name": "Bill Smith",
+        "street_address": "123 Oak Street, Bangalore",
+        "date_of_birth": "1988-03-10",
+        "phone_number": "9876543212",
+        "email": "bill.smith@email.com"
+    },
+    {
+        "customer_id": "CUST004",
+        "full_name": "Robert Johnson",
+        "customer_name": "Bob Johnson",
+        "street_address": "456 Pine Road, Chennai",
+        "date_of_birth": "1992-07-15",
+        "phone_number": "9876543213",
+        "email": "bob.johnson@email.com"
+    },
+    {
+        "customer_id": "CUST005",
+        "full_name": "Mohammed Ali",
+        "customer_name": "Mohd Ali",
+        "street_address": "789 Maple Avenue, Hyderabad",
+        "date_of_birth": "1995-11-30",
+        "phone_number": "9876543214",
+        "email": "mohd.ali@email.com"
+    }
+] 
