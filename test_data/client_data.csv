@@ -1,6 +1,5 @@
-cust_id,name,client_name,address,dob,contact_info
-1001,G. Smith,Gaurav Smith,123 Main Street, New Delhi,15/05/1990,Phone: 9876543210
-1002,P. Sharma,Priya Sharma,456 Park Avenue, Mumbai City,22/08/1985,Phone: 9876543211
-1003,W. Smith,Bill Smith,123 Oak Street, Bangalore,10/03/1988,Phone: 9876543212
-1004,R. Johnson,Bob Johnson,456 Pine Road, Chennai,15/07/1992,Phone: 9876543213
-1005,M. Ali,Mohd Ali,789 Maple Avenue, Hyderabad,30/11/1995,Phone: 9876543214 
+cust_id,name,address,city,dob,country,email
+CUST-1001,Jon Smythe,123 Main Street, NY,1980-01-01,USA,jsmith@example.com
+0001007,Liz Garcia,1 Gran Via, Madrid,1991-04-04,Spain,
+1002A,Ali Mohamed,12 Nile Str, Cairo,1975-05-10,Egypt,amohamed@example.com
+CUST-4001,Anna Müller,Hauptstr. 10, Berlin,1987-09-09,Germany,amueller@example.de

@@ -1,42 +1,6 @@
 [
-    {
-        "cust_id": "1001",
-        "name": "J. Smith",
-        "client_name": "John Smith",
-        "address": "123 Main St, New York NY",
-        "dob": "1990-05-15",
-        "contact_info": "Phone: 555-0123"
-    },
-    {
-        "cust_id": "1002",
-        "name": "P. Sharma",
-        "client_name": "Priya Sharma",
-        "address": "456 Park Ave, Mumbai MH",
-        "dob": "1985-08-22",
-        "contact_info": "Phone: 555-0124"
-    },
-    {
-        "cust_id": "1003",
-        "name": "W. Johnson",
-        "client_name": "Bill Johnson",
-        "address": "789 Oak Rd, London UK",
-        "dob": "1988-11-30",
-        "contact_info": "Phone: 555-0125"
-    },
-    {
-        "cust_id": "1004",
-        "name": "F. Ahmed",
-        "client_name": "Fatima Ahmed",
-        "address": "321 Pine St, Dubai UAE",
-        "dob": "1992-03-10",
-        "contact_info": "Phone: 555-0126"
-    },
-    {
-        "cust_id": "1005",
-        "name": "R. Chen",
-        "client_name": "Bob Chen",
-        "address": "654 Maple Dr, Singapore",
-        "dob": "1987-07-25",
-        "contact_info": "Phone: 555-0127"
-    }
-] 
+    {"cust_id": "CUST-1001", "name": "Jon Smythe", "address": "123 Main St., NY", "dob": "1980-1-1", "country": "USA"},
+    {"cust_id": "0001007", "name": "Liz Garcia", "address": "1 Gran Via, Madrid", "dob": "1991-04-04", "country": "Spain"},
+    {"cust_id": "CUST-2001", "name": "Carlos Ruiz", "address": "Calle Mayor 5, Madrid", "dob": "1985-07-21", "country": "Spain"},
+    {"cust_id": "CUST-1001-DUP", "name": "J. Smyth", "address": "123 Main Street, New York", "dob": "01/01/1980", "country": "USA"}
+]

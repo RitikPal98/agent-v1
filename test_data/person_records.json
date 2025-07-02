@@ -1,42 +1,7 @@
 [
-    {
-        "id": "1",
-        "customer_name": "Gaurav P.",
-        "display_name": "Gaurav",
-        "location": "Main St 123, Delhi NCR",
-        "birth_date": "1990-05-15",
-        "registration_date": "2020-01-15"
-    },
-    {
-        "id": "2",
-        "customer_name": "Priya S.",
-        "display_name": "Priya Sharma",
-        "location": "Park Ave 456, Mumbai MH",
-        "birth_date": "1985-08-22",
-        "registration_date": "2019-11-20"
-    },
-    {
-        "id": "3",
-        "customer_name": "William Smith",
-        "display_name": "Bill",
-        "location": "123 Oak Street, Bangalore",
-        "birth_date": "1988-03-10",
-        "registration_date": "2021-05-20"
-    },
-    {
-        "id": "4",
-        "customer_name": "Robert Johnson",
-        "display_name": "Bob",
-        "location": "456 Pine Road, Chennai",
-        "birth_date": "1992-07-15",
-        "registration_date": "2022-02-28"
-    },
-    {
-        "id": "5",
-        "customer_name": "Mohammed Ali",
-        "display_name": "Mohd",
-        "location": "789 Maple Avenue, Hyderabad",
-        "birth_date": "1995-11-30",
-        "registration_date": "2021-12-15"
-    }
-] 
+    {"id": "1", "customer_name": "Jon S.", "location": "123 Main St, NY", "birth_date": "1980-01-01", "national_id": "US19800101JS", "country": "USA"},
+    {"id": "7", "customer_name": "Maria Garcia", "location": "Gran Via 1, Madrid", "birth_date": "1991-4-4", "national_id": "ES19910404MG", "country": "Spain"},
+    {"id": "2B", "customer_name": "Vladimir Putin", "location": "Kremlin, Moscow", "birth_date": "1952/10/07", "national_id": "RU19521007VP", "country": "Russia"},
+    {"id": "1-DUP", "customer_name": "J. Smyth", "location": "123 Main Street, NY", "birth_date": "01-01-1980", "national_id": "US19800101JS", "country": "USA"},
+    {"id": "8", "customer_name": "Sofia Rossi", "location": "Via Roma 22, Rome", "birth_date": "1995-06-06", "national_id": "IT19950606SR", "country": "Italy"}
+]

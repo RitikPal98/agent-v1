@@ -10,17 +10,6 @@ import ast  # add this at the top
 load_dotenv()
 
 class LLMClient:
-    def __init__(self, model="gemini-2.5-turbo"):
-        api_key = os.getenv("GOOGLE_API_KEY")
-        if not api_key:
-            raise ValueError("GOOGLE_API_KEY not set")
-        genai.configure(api_key=api_key)
-        self.model = genai.GenerativeModel(model)
-
-    def generate(self, prompt: str) -> str:
-        return self.model.generate_content(prompt).text
-
-class LLMClient:
     """
     Wraps the Google Gemini (GenAI) client. Loads the GEMINI_API_KEY from .env.
     """
@@ -48,6 +37,8 @@ class LLMClient:
         except Exception as e:
             print(f"Error generating text: {e}")
             return ""
+
+
 
 class SchemaDetectorAgent:
     def __init__(self, llm: LLMClient):
@@ -102,6 +93,166 @@ class SchemaDetectorAgent:
 class Profile:
     def __init__(self, data: Dict[str, Any]):
         self.data = data
+
+
+class NLPreprocessorAgent:
+    """
+    Agent 0: Natural Language Preprocessor
+    Extracts structured profile information from natural language queries.
+    """
+    
+    def __init__(self, llm: LLMClient):
+        self.llm = llm
+        # Define supported field types for dynamic extraction
+        self.supported_fields = {
+            "name": ["name", "full_name", "first_name", "last_name", "given_name", "surname"],
+            "dob": ["dob", "date_of_birth", "birth_date", "birthdate", "born"],
+            "id": ["id", "customer_id", "user_id", "account_id", "identification", "identifier"],
+            "phone": ["phone", "phone_number", "mobile", "cell", "telephone", "contact"],
+            "email": ["email", "email_address", "mail", "e_mail"],
+            "address": ["address", "location", "residence", "home", "city", "state", "country"],
+            "bank_id": ["bank_id", "bank_account", "account_number", "banking_id"],
+            "passport": ["passport", "passport_number", "passport_id"],
+            "ssn": ["ssn", "social_security", "social_security_number"],
+            "nationality": ["nationality", "citizenship", "country_of_birth"],
+            "occupation": ["occupation", "job", "profession", "work", "employment"],
+            "company": ["company", "employer", "organization", "firm", "workplace"]
+        }
+
+    def extract_profile(self, natural_language_query: str) -> Dict[str, Any]:
+        """
+        Extract structured profile information from natural language input.
+        
+        Args:
+            natural_language_query: Natural language text containing profile information
+            
+        Returns:
+            Dictionary with extracted fields in clean JSON format
+        """
+        
+        # Create field descriptions for the prompt
+        field_descriptions = []
+        for field_type, variations in self.supported_fields.items():
+            field_descriptions.append(f"- {field_type}: {', '.join(variations)}")
+        
+        prompt = f"""You are an expert information extraction agent specializing in profile data extraction from natural language.
+
+Your task is to analyze the following natural language query and extract ALL possible profile information into a structured JSON format.
+
+SUPPORTED FIELD TYPES:
+{chr(10).join(field_descriptions)}
+
+INPUT TEXT: "{natural_language_query}"
+
+EXTRACTION RULES:
+1. Extract ONLY the information that is explicitly mentioned in the text
+2. Use standardized field names (name, dob, id, phone, email, address, bank_id, passport, ssn, nationality, occupation, company)
+3. DO NOT invent or assume any information not present in the text
+4. Handle dates in a consistent format when possible
+5. Clean and normalize extracted values (remove extra spaces, standardize formats)
+6. If multiple values exist for the same field type, choose the most complete one
+7. Return ONLY the JSON object, no explanations or markdown
+
+EXAMPLE OUTPUT FORMAT:
+{{
+  "name": "John Doe",
+  "dob": "1990-01-15",
+  "phone": "9999999999",
+  "email": "john@example.com",
+  "address": "New York"
+}}
+
+Extract the profile information and respond with ONLY the JSON object:"""
+
+        try:
+            response = self.llm.generate(prompt)
+            
+            # Clean and parse the JSON response
+            return self._parse_json_response(response)
+            
+        except Exception as e:
+            print(f"❌ Error in NL extraction: {e}")
+            return {}
+
+    def _parse_json_response(self, response: str) -> Dict[str, Any]:
+        """Parse and clean JSON response from LLM"""
+        try:
+            # Try extracting JSON inside triple backticks first
+            match = re.search(r'```(?:json)?\s*(\{.*?\})\s*```', response, re.DOTALL)
+            json_str = match.group(1) if match else response.strip()
+            
+            # Remove any leading/trailing whitespace and non-JSON content
+            json_str = json_str.strip()
+            
+            # Find the first { and last } to extract clean JSON
+            start_idx = json_str.find('{')
+            end_idx = json_str.rfind('}')
+            
+            if start_idx != -1 and end_idx != -1:
+                json_str = json_str[start_idx:end_idx+1]
+            
+            # Try standard JSON parsing
+            parsed_data = json.loads(json_str)
+            
+            # Clean and validate the extracted data
+            return self._clean_extracted_data(parsed_data)
+            
+        except json.JSONDecodeError:
+            try:
+                # Fallback to ast.literal_eval for single-quoted JSON
+                parsed_data = ast.literal_eval(json_str)
+                return self._clean_extracted_data(parsed_data)
+            except Exception as e:
+                print(f"⚠️ Failed to parse NL extraction response: {e}")
+                print(f"Raw response: {response}")
+                return {}
+
+    def _clean_extracted_data(self, data: Dict[str, Any]) -> Dict[str, Any]:
+        """Clean and normalize extracted profile data"""
+        cleaned = {}
+        
+        for key, value in data.items():
+            if value and str(value).strip():  # Only include non-empty values
+                key = key.lower().strip()
+                
+                # Normalize string values
+                if isinstance(value, str):
+                    value = value.strip()
+                    # Remove quotes if present
+                    if value.startswith('"') and value.endswith('"'):
+                        value = value[1:-1]
+                
+                # Map common variations to standard field names
+                standardized_key = self._standardize_field_name(key)
+                if standardized_key:
+                    cleaned[standardized_key] = value
+        
+        return cleaned
+
+    def _standardize_field_name(self, field_name: str) -> str:
+        """Map field variations to standard field names"""
+        field_name = field_name.lower().strip().replace(' ', '_')
+        
+        for standard_name, variations in self.supported_fields.items():
+            if field_name in [v.lower().replace(' ', '_') for v in variations]:
+                return standard_name
+        
+        # If no exact match, return the original field name
+        return field_name
+
+    def create_profile_from_nl(self, natural_language_query: str) -> Profile:
+        """
+        Convenience method to create a Profile object directly from natural language.
+        
+        Args:
+            natural_language_query: Natural language text containing profile information
+            
+        Returns:
+            Profile object with extracted data
+        """
+        extracted_data = self.extract_profile(natural_language_query)
+        return Profile(extracted_data)
+
 
 class ProfileMatchingAgent:
     def __init__(self, llm: LLMClient):
@@ -162,23 +313,6 @@ class CSVSource(DataSource):
         reader = csv.DictReader(io.StringIO(self.csv_str))
         return [Profile(dict(row)) for row in reader]
 
-class SQLiteSource(DataSource):
-    def __init__(self, name: str, db_path: str, table: str):
-        super().__init__(name)
-        self.db_path = db_path
-        self.table = table
-
-    def infer_schema(self):
-        conn = sqlite3.connect(self.db_path)
-        rows = conn.execute(f"PRAGMA table_info({self.table})").fetchall()
-        conn.close()
-        return [r[1] for r in rows]
-
-    def get_profiles(self):
-        conn = sqlite3.connect(self.db_path)
-        rows = conn.execute(f"SELECT * FROM {self.table}").fetchall()
-        cols = [d[0] for d in conn.execute(f"SELECT * FROM {self.table}").description]
-        return [Profile({cols[i]: row[i] for i in range(len(cols))}) for row in rows]
 
 class JSONSource(DataSource):
     def __init__(self, name: str, json_str: str):
@@ -236,71 +370,47 @@ def recursive_match(base: Profile, sources: List[DataSource], llm: LLMClient, th
     return sorted(results, key=lambda x: x["score"], reverse=True)
 
 
+def recursive_match_with_full_profiles(base: Profile, sources: List[DataSource], llm: LLMClient, threshold=0.5) -> List[Dict[str, Any]]:
+    """
+    Enhanced version of recursive_match that includes full profile data in results.
+    This function calls the original recursive_match and then enhances results with complete profile information.
+    """
+    schema_agent = SchemaDetectorAgent(llm)
+    matcher = ProfileMatchingAgent(llm)
+    results = []
 
-if __name__ == "__main__":
+    for src in sources:
+        base_fields = list(base.data.keys())
+        target_fields = schema_agent.detect(src)
+        mapping = schema_agent.align(base_fields, target_fields)
 
-    # Initialize the LLM client
-    llm = LLMClient()
+        for p in src.get_profiles():
+            normalized = {}
+            for k, v in p.data.items():
+                base_field = mapping.get(k)
+                if base_field:
+                    normalized[base_field] = v.strip() if isinstance(v, str) else v
 
-    # Base profile with partial information
-    base_profile = Profile({
-        "name": "John Smith",
-        "dob": "1988-01-01",
-        "email": "",  # Missing info to be enriched
-        "customer_id": "CUST1234"
-    })
-
-    # Simulated heterogeneous data sources
-
-    # CSV Source (simulates no header and missing fields)
-    csv_data = """name,dob,email,address
-    John Smith,1988-01-01,john@example.com,123 Main St
-    Jane Doe,1990-05-10,jane@example.com,456 Oak Ave"""
-    csv_source = CSVSource("CustomerCSV", csv_data)
-
-    # JSON Source (missing dob but has customer_id)
-    json_data = """[
-    {"name": "John Smith", "customer_id": "CUST1234", "phone": "9999999999"},
-    {"name": "Alice", "customer_id": "CUST5555"}
-    ]"""
-    json_source = JSONSource("CRM_JSON", json_data)
-
-    # SQLite Source (requires a .db file, here we create a sample in-memory one)
+            candidate = Profile(normalized)
+            res = matcher.compare(base, candidate)
+            score = res.get("score", 0)
+            print(f"📦 Source: {src.name}")
+            
+            if score >= threshold:
+                print(f"\n✅ MATCH FOUND from {src.name} with score {score:.2f}")
+                for k, v in normalized.items():
+                    if k not in base.data or base.data[k] in (None, "", []):
+                        print(f"🔧 Enriching '{k}' → '{v}'")
+                        base.data[k] = v
+                
+                # Include both normalized data (for enrichment) and full original profile data (for display)
+                res.update({
+                    "source": src.name, 
+                    "candidate": normalized,  # Normalized/mapped fields for enrichment
+                    "full_profile": p.data,   # Complete original profile data for display
+                    "field_mapping": mapping  # Field mapping for reference
+                })
+                results.append(res)
     
-    conn = sqlite3.connect("test_customers.db")
-    cur = conn.cursor()
-    cur.execute("DROP TABLE IF EXISTS customers")
-    cur.execute("""
-    CREATE TABLE customers (
-        full_name TEXT,
-        birthdate TEXT,
-        email TEXT,
-        customer_id TEXT
-    )
-    """)
-    cur.execute("INSERT INTO customers VALUES (?, ?, ?, ?)",
-                ("John Smith", "1988-01-01", "john.alt@example.com", "CUST1234"))
-    conn.commit()
-    conn.close()
-
-    sqlite_source = SQLiteSource("SQL_Customers", "test_customers.db", "customers")
-
-    # List of data sources
-    sources = [csv_source, json_source, sqlite_source]
-
-    # Perform recursive matching and enrichment
-    results = recursive_match(base_profile, sources, llm, threshold=0.1)
-    print(results)
-
-    # Output results
-    print("\n🎯 Matched Candidates with Confidence Scores:\n")
-    for i, r in enumerate(results, 1):
-        print(f"{i}. Source: {r['source']}")
-        print(f"   Score: {r['score']:.2f}")
-        print(f"   Reason: {r['reason']}")
-        print(f"   Candidate Data: {r['candidate']}")
-        print("-" * 60)
-
-    print("\n🧠 Final Enriched Base Profile:")
-    print(base_profile.data)
+    return sorted(results, key=lambda x: x["score"], reverse=True)
 

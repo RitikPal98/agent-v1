@@ -6,6 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // Set up form submission
   const form = document.getElementById("screeningForm");
   form.addEventListener("submit", handleFormSubmit);
+
+  // Set up natural language form submission
+  const nlForm = document.getElementById("naturalLanguageForm");
+  nlForm.addEventListener("submit", handleNaturalLanguageFormSubmit);
+
   // Set up system info toggle
   setupSystemInfoToggle();
 });
@@ -56,22 +61,7 @@ async function loadDataSourceSelection() {
     });
     html += "</div>";
   }
-  // SQLite
-  if (data.sqlite.length) {
-    html += '<div class="mb-2"><strong>SQLite DBs</strong><br>';
-    data.sqlite.forEach((db, idx) => {
-      html += `<div class="mb-1"><input class="form-check-input ds-sqlite" type="checkbox" value="${db.path}" id="sqlite-${idx}"><label class="form-check-label" for="sqlite-${idx}">${db.path}</label>`;
-      if (db.tables.length) {
-        html += `<select class="form-select form-select-sm mt-1 ms-2 ds-sqlite-table" data-db="${db.path}" style="width:auto;display:inline-block;">`;
-        db.tables.forEach((t) => {
-          html += `<option value="${t}">${t}</option>`;
-        });
-        html += "</select>";
-      }
-      html += "</div>";
-    });
-    html += "</div>";
-  }
+
   container.innerHTML = html;
   // Add change listeners to update schema info
   container.querySelectorAll("input,select").forEach((el) => {
@@ -91,15 +81,7 @@ function getSelectedSources() {
   container.querySelectorAll(".ds-json:checked").forEach((el) => {
     sources.push({ type: "json", name: el.value });
   });
-  // SQLite
-  container.querySelectorAll(".ds-sqlite:checked").forEach((el) => {
-    const dbPath = el.value;
-    // Find the associated table dropdown
-    const tableSel = el.parentElement.querySelector("select.ds-sqlite-table");
-    if (tableSel) {
-      sources.push({ type: "sqlite", name: dbPath, table: tableSel.value });
-    }
-  });
+
   return sources;
 }
 
@@ -171,22 +153,57 @@ async function handleFormSubmit(event) {
   }
 }
 
-function displayRankedResults(results) {
+function displayRankedResults(results, inputType = null, originalQuery = null) {
   const resultsDiv = document.getElementById("results");
   if (!results || !results.length) {
-    resultsDiv.innerHTML =
-      '<div class="alert alert-info">No matches found.</div>';
+    let noMatchesHtml = '<div class="alert alert-info">No matches found.</div>';
+    if (inputType === "natural_language" && originalQuery) {
+      noMatchesHtml = `<div class="alert alert-info">
+        <h6><i class="fas fa-info-circle me-1"></i>No matches found</h6>
+        <p class="mb-1"><strong>Original Query:</strong> ${originalQuery}</p>
+        <small>Try rephrasing your query or check if the data sources contain relevant information.</small>
+      </div>`;
+    }
+    resultsDiv.innerHTML = noMatchesHtml;
     return;
   }
-  let html = '<div class="list-group">';
+
+  let html = "";
+
+  // Add input type header if applicable
+  if (inputType === "natural_language" && originalQuery) {
+    html += `<div class="alert alert-success mb-3">
+      <h6><i class="fas fa-brain me-1"></i>Natural Language Processing Complete</h6>
+      <p class="mb-1"><strong>Original Query:</strong> ${originalQuery}</p>
+      <small>Profile information extracted and matched against ${results.length} source(s)</small>
+    </div>`;
+  }
+
+  html += '<div class="list-group">';
   results.forEach((r, i) => {
-    html += `<div class="list-group-item"><strong>#${i + 1} [${
-      r.source
-    }]</strong> <span class="badge bg-primary ms-2">Score: ${(
-      r.score * 100
-    ).toFixed(1)}%</span><br><small>${
-      r.reason
-    }</small><br><code>${JSON.stringify(r.candidate, null, 2)}</code></div>`;
+    // Use full_profile if available (from enhanced natural language search), otherwise use candidate data
+    const displayData = r.full_profile || r.candidate;
+    const isEnhanced = !!r.full_profile;
+
+    html += `<div class="list-group-item">
+      <div class="d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+          <div class="fw-bold">#${i + 1} Match from ${r.source}</div>
+          <small class="text-muted">${r.reason}</small>
+        </div>
+        <span class="badge bg-primary rounded-pill">${(r.score * 100).toFixed(
+          1
+        )}%</span>
+      </div>
+      <div class="mt-2">
+        <small><strong>Profile Data:</strong></small>
+        <pre class="bg-light p-2 rounded mt-1" style="font-size: 0.8em; max-height: 150px; overflow-y: auto;">${JSON.stringify(
+          displayData,
+          null,
+          2
+        )}</pre>
+      </div>
+    </div>`;
   });
   html += "</div>";
   resultsDiv.innerHTML = html;
@@ -430,4 +447,84 @@ function getConfidenceBadgeClass(confidence) {
   if (confidence >= 0.8) return "bg-success";
   if (confidence >= 0.5) return "bg-warning";
   return "bg-danger";
+}
+
+// Handle natural language form submission
+async function handleNaturalLanguageFormSubmit(event) {
+  event.preventDefault();
+  const resultsDiv = document.getElementById("results");
+  const enrichedDiv = document.getElementById("enrichedProfile");
+  const rawJsonDiv = document.getElementById("rawJsonResponse");
+  const previewDiv = document.getElementById("extractedProfilePreview");
+  const contentDiv = document.getElementById("extractedProfileContent");
+
+  resultsDiv.innerHTML = `<div class="text-center"><div class="spinner-border text-primary" role="status"></div><p class="mt-2">Processing natural language and screening...</p></div>`;
+  enrichedDiv.innerHTML = "";
+  rawJsonDiv.textContent = "";
+  previewDiv.style.display = "none"; // Hide initially
+
+  const query = document.getElementById("naturalLanguageQuery").value.trim();
+  const sources = getSelectedSources();
+
+  if (!sources.length) {
+    resultsDiv.innerHTML =
+      '<div class="alert alert-warning">Please select at least one data source.</div>';
+    return;
+  }
+
+  if (!query) {
+    resultsDiv.innerHTML =
+      '<div class="alert alert-warning">Please enter a natural language description.</div>';
+    return;
+  }
+
+  try {
+    const response = await fetch("/api/match_nl", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        natural_language_query: query,
+        sources: sources,
+      }),
+    });
+
+    const data = await response.json();
+
+    if (data.error) {
+      resultsDiv.innerHTML = `<div class="alert alert-danger">Error: ${data.error}</div>`;
+      return;
+    }
+
+    // Show extracted profile information
+    if (
+      data.extracted_profile &&
+      Object.keys(data.extracted_profile).length > 0
+    ) {
+      let profileHtml = "";
+      for (const [key, value] of Object.entries(data.extracted_profile)) {
+        profileHtml += `<div class="mb-1"><strong>${key}:</strong> ${value}</div>`;
+      }
+      contentDiv.innerHTML = profileHtml;
+      previewDiv.style.display = "block";
+    }
+
+    // Display results with input type information
+    displayRankedResults(
+      data.ranked_results,
+      data.input_type,
+      data.original_query
+    );
+
+    enrichedDiv.innerHTML =
+      `<div class="mb-2"><strong>Input Type:</strong> ${data.input_type}</div>` +
+      `<div class="mb-2"><strong>Extracted Profile:</strong></div>` +
+      `<code>${JSON.stringify(data.extracted_profile, null, 2)}</code>`;
+
+    rawJsonDiv.textContent = JSON.stringify(data.raw_json, null, 2);
+  } catch (error) {
+    resultsDiv.innerHTML = `<div class="alert alert-danger">Error occurred while screening. Please try again: ${error.message}</div>`;
+    enrichedDiv.innerHTML = "";
+    rawJsonDiv.textContent = "";
+    previewDiv.style.display = "none";
+  }
 }

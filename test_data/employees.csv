@@ -1,0 +1,6 @@
+emp_id,name,address,city,dob,country,department
+E-1001,John Smith,123 Main Street, NY,1980-01-01,USA,Sales
+E-1007,Elizabeth Garcia,1 Gran Via, Madrid,1991-04-04,Spain,Support
+E-1002B,V. Putin,Kremlin, Moscow,1952-10-07,Russia,Executive
+E-1001-DUP,J. Smyth,123 Main St., New York,01/01/1980,USA,Sales
+E-2001,Fatima Noor,Al Wasl Rd, Dubai,1990-11-11,UAE,Finance

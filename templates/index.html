@@ -67,47 +67,107 @@
                         <small class="opacity-75">Enter subject details for screening</small>
                     </div>
                     <div class="card-body">
-                        <form id="screeningForm">
-                            <div class="mb-3">
-                                <label for="customerId" class="form-label">
-                                    <i class="fas fa-id-card me-1"></i>
-                                    Customer ID
-                                </label>
-                                <input type="text" class="form-control" id="customerId" name="customer_id" 
-                                       placeholder="Enter unique identifier">
+                        <!-- Input Method Tabs -->
+                        <ul class="nav nav-pills mb-3" id="inputMethodTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="natural-language-tab" data-bs-toggle="pill" 
+                                        data-bs-target="#natural-language" type="button" role="tab" 
+                                        aria-controls="natural-language" aria-selected="true">
+                                    <i class="fas fa-comment-dots me-1"></i>
+                                    Natural Language
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="structured-tab" data-bs-toggle="pill" 
+                                        data-bs-target="#structured" type="button" role="tab" 
+                                        aria-controls="structured" aria-selected="false">
+                                    <i class="fas fa-list me-1"></i>
+                                    Structured Fields
+                                </button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="inputMethodContent">
+                            <!-- Natural Language Input Tab -->
+                            <div class="tab-pane fade show active" id="natural-language" role="tabpanel" 
+                                 aria-labelledby="natural-language-tab">
+                                <form id="naturalLanguageForm">
+                                    <div class="mb-3">
+                                        
+                                        <textarea class="form-control" id="naturalLanguageQuery" name="natural_language_query" 
+                                                  rows="6" required
+                                                  placeholder="Example: Find details of a person named Rahul Mehra, born on 10 Feb 1990, ID is RHM123, phone number 9990008888, and he lives in Delhi."></textarea>
+                                        <div class="form-text">
+                                            <i class="fas fa-lightbulb me-1"></i>
+                                            You can mention any combination of: name, date of birth, ID, phone, email, address, etc.
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Extracted Profile Preview -->
+                                    <div id="extractedProfilePreview" style="display: none;">
+                                        <div class="alert alert-success">
+                                            <h6 class="alert-heading">
+                                                <i class="fas fa-check-circle me-1"></i>
+                                                Extracted Profile Information
+                                            </h6>
+                                            <div id="extractedProfileContent"></div>
+                                            <hr>
+                                            <small class="mb-0">Profile extracted successfully. Matching results below.</small>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary w-100">
+                                        <i class="fas fa-search me-2"></i>
+                                        Screen Profile
+                                    </button>
+                                </form>
                             </div>
-                            
-                            <div class="mb-3">
-                                <label for="name" class="form-label">
-                                    <i class="fas fa-user me-1"></i>
-                                    Full Name <span class="text-danger">*</span>
-                                </label>
-                                <input type="text" class="form-control" id="name" name="name" required
-                                       placeholder="Enter full legal name">
+
+                            <!-- Structured Input Tab -->
+                            <div class="tab-pane fade" id="structured" role="tabpanel" aria-labelledby="structured-tab">
+                                <form id="screeningForm">
+                                    <div class="mb-3">
+                                        <label for="customerId" class="form-label">
+                                            <i class="fas fa-id-card me-1"></i>
+                                            Customer ID
+                                        </label>
+                                        <input type="text" class="form-control" id="customerId" name="customer_id" 
+                                               placeholder="Enter unique identifier">
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">
+                                            <i class="fas fa-user me-1"></i>
+                                            Full Name <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="text" class="form-control" id="name" name="name" required
+                                               placeholder="Enter full legal name">
+                                    </div>
+                                    
+                                    <div class="mb-3">
+                                        <label for="address" class="form-label">
+                                            <i class="fas fa-map-marker-alt me-1"></i>
+                                            Address
+                                        </label>
+                                        <input type="text" class="form-control" id="address" name="address"
+                                               placeholder="Enter complete address">
+                                    </div>
+                                    
+                                    <div class="mb-4">
+                                        <label for="dob" class="form-label">
+                                            <i class="fas fa-calendar-alt me-1"></i>
+                                            Date of Birth
+                                        </label>
+                                        <input type="date" class="form-control" id="dob" name="dob">
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn-primary w-100">
+                                        <i class="fas fa-search me-2"></i>
+                                        Initiate Screening Process
+                                    </button>
+                                </form>
                             </div>
-                            
-                            <div class="mb-3">
-                                <label for="address" class="form-label">
-                                    <i class="fas fa-map-marker-alt me-1"></i>
-                                    Address
-                                </label>
-                                <input type="text" class="form-control" id="address" name="address"
-                                       placeholder="Enter complete address">
-                            </div>
-                            
-                            <div class="mb-4">
-                                <label for="dob" class="form-label">
-                                    <i class="fas fa-calendar-alt me-1"></i>
-                                    Date of Birth
-                                </label>
-                                <input type="date" class="form-control" id="dob" name="dob">
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary w-100">
-                                <i class="fas fa-search me-2"></i>
-                                Initiate Screening Process
-                            </button>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -116,12 +176,12 @@
             <div class="col-lg-6 col-md-12">
                 <!-- Screening Results -->
                 <div class="card fade-in-up">
-                    <div class="card-header bg-success-gradient">
-                        <h5 class="card-title mb-0">
-                            <i class="fas fa-chart-line me-2"></i>
+                    <div class="card-header bg-success-gradient" style="background: none !important; border-bottom: none;">
+                        <span class="pill-header-green">
+                            <i class="fas fa-chart-line"></i>
                             Screening Results & Analysis
-                        </h5>
-                        <small class="opacity-75">Comprehensive matching results with confidence scores</small>
+                        </span>
+                    
                     </div>
                     <div class="card-body">
                         <div id="results">

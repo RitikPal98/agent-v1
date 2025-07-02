@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template, request, jsonify
 import json
-from main import LLMClient, SchemaDetectorAgent, ProfileMatchingAgent, Profile, CSVSource, JSONSource, SQLiteSource, recursive_match
+from main import LLMClient, SchemaDetectorAgent, ProfileMatchingAgent, Profile, CSVSource, JSONSource, recursive_match, NLPreprocessorAgent, recursive_match_with_full_profiles
 
 app = Flask(__name__)
 
@@ -9,7 +9,6 @@ app = Flask(__name__)
 DATA_DIRS = ["test_data", "."]
 CSV_EXT = ".csv"
 JSON_EXT = ".json"
-SQLITE_EXTS = [".db", ".sqlite", ".sqlite3"]
 
 def list_data_files():
     files = {"csv": [], "json": [], "sqlite": []}
@@ -21,8 +20,7 @@ def list_data_files():
                     files["csv"].append(fpath)
                 elif fname.endswith(JSON_EXT):
                     files["json"].append(fpath)
-                elif any(fname.endswith(ext) for ext in SQLITE_EXTS):
-                    files["sqlite"].append(fpath)
+                
     return files
 
 # Helper: Load file content
@@ -31,28 +29,12 @@ def load_file_content(path):
     with open(path, "r", encoding="utf-8") as f:
         return f.read()
 
-# Helper: Get all table names from a SQLite DB
-import sqlite3
-def get_sqlite_tables(db_path):
-    try:
-        conn = sqlite3.connect(db_path)
-        cur = conn.cursor()
-        tables = [row[0] for row in cur.execute("SELECT name FROM sqlite_master WHERE type='table'")]
-        conn.close()
-        return tables
-    except Exception as e:
-        return []
 
 # Endpoint: List all available data sources
 @app.route("/api/list_sources")
 def api_list_sources():
     files = list_data_files()
-    # For SQLite, also list tables
-    sqlite_with_tables = []
-    for db_path in files["sqlite"]:
-        tables = get_sqlite_tables(db_path)
-        sqlite_with_tables.append({"path": db_path, "tables": tables})
-    return jsonify({"csv": files["csv"], "json": files["json"], "sqlite": sqlite_with_tables})
+    return jsonify({"csv": files["csv"], "json": files["json"]})
 
 # Endpoint: Get schema for selected sources
 @app.route("/api/schema", methods=["POST"])
@@ -70,9 +52,6 @@ def api_schema():
         elif typ == "json":
             json_str = load_file_content(name)
             source = JSONSource(name, json_str)
-        elif typ == "sqlite":
-            table = src.get("table")
-            source = SQLiteSource(name, name, table)
         else:
             continue
         fields = schema_agent.detect(source)
@@ -96,15 +75,99 @@ def api_match():
         elif typ == "json":
             json_str = load_file_content(name)
             source = JSONSource(name, json_str)
-        elif typ == "sqlite":
-            table = src.get("table")
-            source = SQLiteSource(name, name, table)
         else:
             continue
         sources.append(source)
     results = recursive_match(base_profile, sources, llm, threshold=0.5)
     # Return ranked results, enriched profile, and raw JSON
     return jsonify({
+        "ranked_results": results,
+        "enriched_profile": base_profile.data,
+        "raw_json": results
+    })
+
+# Endpoint: Process natural language input to extract profile information
+@app.route("/api/extract_profile", methods=["POST"])
+def api_extract_profile():
+    """Extract structured profile information from natural language input"""
+    data = request.json
+    natural_language_query = data.get("query", "")
+    
+    if not natural_language_query.strip():
+        return jsonify({"error": "No query provided"}), 400
+    
+    try:
+        llm = LLMClient()
+        nl_processor = NLPreprocessorAgent(llm)
+        
+        # Extract profile information from natural language
+        extracted_profile = nl_processor.extract_profile(natural_language_query)
+        
+        return jsonify({
+            "success": True,
+            "extracted_profile": extracted_profile,
+            "original_query": natural_language_query
+        })
+        
+    except Exception as e:
+        return jsonify({
+            "success": False,
+            "error": str(e),
+            "original_query": natural_language_query
+        }), 500
+
+# Enhanced endpoint: Run matching with natural language input support
+@app.route("/api/match_nl", methods=["POST"])
+def api_match_nl():
+    """Run matching pipeline with either structured profile or natural language input"""
+    data = request.json
+    selected_sources = data["sources"]
+    
+    # Check if input is natural language or structured profile
+    if "natural_language_query" in data and data["natural_language_query"].strip():
+        # Process natural language input first
+        try:
+            llm = LLMClient()
+            nl_processor = NLPreprocessorAgent(llm)
+            extracted_data = nl_processor.extract_profile(data["natural_language_query"])
+            base_profile = Profile(extracted_data)
+            input_type = "natural_language"
+            original_query = data["natural_language_query"]
+        except Exception as e:
+            return jsonify({
+                "error": f"Failed to process natural language input: {str(e)}",
+                "original_query": data.get("natural_language_query", "")
+            }), 500
+    else:
+        # Use structured profile data
+        base_profile = Profile(data["base_profile"])
+        input_type = "structured"
+        original_query = None
+    
+    # Continue with matching pipeline
+    llm = LLMClient()
+    sources = []
+    for src in selected_sources:
+        typ = src["type"]
+        name = src["name"]
+        if typ == "csv":
+            csv_str = load_file_content(name)
+            source = CSVSource(name, csv_str)
+        elif typ == "json":
+            json_str = load_file_content(name)
+            source = JSONSource(name, json_str)
+        else:
+            continue
+        sources.append(source)
+    
+    # Use enhanced function that includes full profile data for better display
+    results = recursive_match_with_full_profiles(base_profile, sources, llm, threshold=0.5)
+    
+    # Return enhanced results with input information
+    return jsonify({
+        "input_type": input_type,
+        "original_query": original_query,
+        "extracted_profile": base_profile.data,
         "ranked_results": results,
         "enriched_profile": base_profile.data,
         "raw_json": results

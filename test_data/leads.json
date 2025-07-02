@@ -1,0 +1,7 @@
+[
+    {"lead_id": "L-1001", "name": "Jon Smythe", "contact": "jon.smythe@demo.com", "address": "123 Main Street, NY", "dob": "1980-01-01", "company": "Acme Corp", "country": "USA"},
+    {"lead_id": "L-1007", "name": "Liz Garcia", "contact": "liz.garcia@demo.com", "address": "1 Gran Via, Madrid", "dob": "1991-04-04", "company": "Iberia SA", "country": "Spain"},
+    {"lead_id": "L-1002B", "name": "V. Putin", "contact": "v.putin@kremlin.ru", "address": "Kremlin, Moscow", "dob": "07/10/1952", "company": "Kremlin Holdings", "country": "Russia"},
+    {"lead_id": "L-1001-DUP", "name": "J. Smyth", "contact": "jon.smyth@demo.com", "address": "123 Main St., New York", "dob": "01-01-1980", "company": "Acme Corp", "country": "USA"},
+    {"lead_id": "L-2001", "name": "Sofia Rossi", "contact": "sofia.rossi@demo.com", "address": "Via Roma 22, Rome", "dob": "1995-06-06", "company": "Roma SpA", "country": "Italy"}
+]

@@ -1,47 +1,6 @@
 [
-    {
-        "customer_id": "CUST001",
-        "full_name": "Gaurav Smith",
-        "customer_name": "Gaurav Smith",
-        "street_address": "123 Main St, Delhi",
-        "date_of_birth": "1990-05-15",
-        "phone_number": "9876543210",
-        "email": "gaurav.smith@email.com"
-    },
-    {
-        "customer_id": "CUST002",
-        "full_name": "Priya Sharma",
-        "customer_name": "P. Sharma",
-        "street_address": "456 Park Ave, Mumbai",
-        "date_of_birth": "1985-08-22",
-        "phone_number": "9876543211",
-        "email": "priya@email.com"
-    },
-    {
-        "customer_id": "CUST003",
-        "full_name": "William Robert Smith",
-        "customer_name": "Bill Smith",
-        "street_address": "123 Oak Street, Bangalore",
-        "date_of_birth": "1988-03-10",
-        "phone_number": "9876543212",
-        "email": "bill.smith@email.com"
-    },
-    {
-        "customer_id": "CUST004",
-        "full_name": "Robert Johnson",
-        "customer_name": "Bob Johnson",
-        "street_address": "456 Pine Road, Chennai",
-        "date_of_birth": "1992-07-15",
-        "phone_number": "9876543213",
-        "email": "bob.johnson@email.com"
-    },
-    {
-        "customer_id": "CUST005",
-        "full_name": "Mohammed Ali",
-        "customer_name": "Mohd Ali",
-        "street_address": "789 Maple Avenue, Hyderabad",
-        "date_of_birth": "1995-11-30",
-        "phone_number": "9876543214",
-        "email": "mohd.ali@email.com"
-    }
-] 
+    {"customer_id": "CUST-1001", "full_name": "John Smith", "customer_name": "Jon Smythe", "street_address": "123 Main Street, NY", "date_of_birth": "1980-01-01", "phone_number": "555-1001", "email": "jsmith@example.com", "country": "USA"},
+    {"customer_id": "0001007", "full_name": "Elizabeth Garcia", "customer_name": "Liz G.", "street_address": "1 Gran Via, Madrid", "date_of_birth": "1991/04/04", "phone_number": "555-1007", "email": "liz.garcia@example.com", "country": "Spain"},
+    {"customer_id": "1002B", "full_name": "V. Putin", "customer_name": "Vladimir Putin", "street_address": "Kremlin, Moscow", "date_of_birth": "07-10-1952", "phone_number": "555-2002", "email": "v.putin@kremlin.ru", "country": "Russia"},
+    {"customer_id": "CUST-1001-ALT", "full_name": "Jon S.", "customer_name": "J. Smyth", "street_address": "123 Main St, NY", "date_of_birth": "1980-01-01", "phone_number": "555-1001", "email": "jon.smythe@demo.com", "country": "USA"}
+]
