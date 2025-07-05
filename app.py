@@ -6,7 +6,7 @@ from main import LLMClient, SchemaDetectorAgent, ProfileMatchingAgent, Profile, 
 app = Flask(__name__)
 
 # Helper: List available data files
-DATA_DIRS = ["test_data", "."]
+DATA_DIRS = ["test_data", ".", "custom-dataset"]
 CSV_EXT = ".csv"
 JSON_EXT = ".json"
 

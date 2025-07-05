@@ -1,0 +1,400 @@
+customer_id,full_name,dob,gender,phone_number,email,address,pan_number,aadhaar_number,account_number,account_type,bank_branch,ifsc_code,kyc_verified
+CUST118510,Widisha Toor,1977-06-20,Male,+915759160,ghayer@example.org,"930
+Bahl, Saharsa, Bihar - 609068",MJIFX7686Z,673329629876,371515010318,Salary,Aurangabad - Sarin Chowk,JWLD206080,False
+CUST339093,Charan Agrawal,1979-12-20,Female,9411697698,vihaanbatta@example.org,"77, Venkatesh Path, Navi Mumbai, Telangana - 831671",DQMKB6244D,155993448135,3842203492887,Savings,Deoghar - Savant Road,NSKE637285,True
+CUST303207,Upma Balay,1956-11-21,Other,0277219870,deshpandeeshana@example.org,"81, Buch Circle, Sri Ganganagar, Tripura - 312627",ZAPNJ4527S,029915016439,50941565606654,NRI,Jammu - Agarwal Ganj,QCLQ686233,False
+CUST260095,Kamya Joshi,1993-08-13,Other,+913556776,ebiswas@example.com,"00/321, Tara Circle, Asansol, Tripura - 544820",BCPOS1881L,160558349542,97398518084387,Savings,Karimnagar - Sachdev Chowk,LRFW125510,False
+CUST939188,Indira Buch,2000-12-18,Male,+918929899,abhiramgulati@example.com,"891, Ratta Road, Dibrugarh, Gujarat - 131825",CJFWP0029S,605494468367,555317364583560,Savings,Gangtok - Choudhry Ganj,VWHA593790,True
+CUST911556,Girindra Bose,1960-01-29,Male,+916212311,jeevikakrishnamurthy@example.org,"H.No. 911, Mani Zila, Motihari, Tripura - 881964",HVYVC2793Z,904498131253,868445159564,Salary,Ranchi - Sidhu,FSRR270094,False
+CUST889511,Qushi Tandon,1988-08-28,Female,0046297456,harini13@example.net,"37/068, Mammen Path, Vadodara, Chhattisgarh - 338812",ENZFJ7448A,182761483237,3771470023955,Salary,Purnia - Sha Street,GMHG248259,True
+CUST884852,Thomas Wali,1979-01-22,Male,0976664056,ekta75@example.com,"902
+Arora Nagar, Aligarh, Chhattisgarh - 326013",KEBSD2529E,799859325511,62581737266319,NRI,Jalgaon - Vaidya Zila,MWUQ830315,False
+CUST402163,Leela Mane,1985-07-18,Female,1770488753,qraj@example.net,"H.No. 561, Parmar Ganj, Madhyamgram, Kerala - 023138",EMXBX8077T,556219974798,0042983521010,NRI,Eluru - Ghosh Road,YESN866082,True
+CUST490111,Gaurangi Singhal,1981-08-30,Female,+912524432,devanshnazareth@example.org,"20
+Kade Zila, Ozhukarai, Punjab - 459527",BCKZJ3693W,289693323207,450085349872,Salary,Ambarnath - Mallick Marg,INMS441806,True
+CUST439964,Udyati Dalal,1995-06-24,Other,0355537969,libni82@example.net,"60/524, Gandhi Marg, Raurkela Industrial Township, Chhattisgarh - 559959",ELRMS5457E,147734855459,5045244762425894,Salary,Raurkela Industrial Township - Bala Circle,FUSB873258,False
+CUST490564,Sai Dalal,1972-09-11,Male,+917779500,baghyawati98@example.org,"400, Shanker, Motihari, Nagaland - 678336",YQRPV7977Q,195066546420,381177234892587,Current,Maheshtala - Kumer Marg,VODH970823,True
+CUST246022,Zaid Bawa,1989-06-25,Male,4623161215,omisha52@example.com,"96/48, Bhattacharyya Circle, Sambalpur, Kerala - 219179",ALCCA4079O,832461939024,644964154593,Savings,Kochi - Nair Nagar,OAIK692565,False
+CUST467251,Warjas Gour,1948-03-25,Female,+910673801,amol75@example.net,"98/63, Padmanabhan Road, Visakhapatnam, Tripura - 039304",TNATQ3183O,658601673509,6743645933668642,Savings,Patiala - Viswanathan Zila,QKIW713929,False
+CUST227165,Rajata Mammen,1972-01-10,Female,+914230048,doralipika@example.net,"H.No. 64
+Gera Road, Bally, Nagaland - 610631",UVMCU6884B,370099494361,565027016285,Salary,Karawal Nagar - Kakar Marg,BWQX498414,False
+CUST709936,Charvi Gokhale,1975-08-22,Male,0688056544,sankargabriel@example.net,"H.No. 95, Raghavan Street, Bardhaman, Mizoram - 523082",PQYCM9894Z,865695833503,7060162191398,Salary,Yamunanagar - Nagy Path,YBED985788,False
+CUST276568,Laksh Rajagopal,1947-11-18,Other,0080893373,simonkari@example.com,"14/09
+Saha Nagar, Dehradun, Tamil Nadu - 356560",HOXAU1184J,854895578779,168689308250235,Current,Katihar - Seshadri Path,MFXR346593,True
+CUST284296,Aarush Garde,2005-04-04,Other,1307917763,gaderiya@example.com,"64, Shan Ganj, Vadodara, Arunachal Pradesh - 738388",IRRHH6837W,412752063339,31052626294960,Savings,Eluru - Behl Chowk,QTTW102705,True
+CUST869954,Dalaja Madan,1957-08-12,Female,+919863564,loyalcharan@example.com,"84/884
+Anand Road, Anantapuram, Arunachal Pradesh - 883554",HATJI0679Q,052238299967,396627883364025,Current,Tiruchirappalli - Seth Nagar,VWJX359005,False
+CUST864834,Aarush Krishnamurthy,1946-11-12,Other,+915221385,vasudhaguha@example.org,"896, Butala Circle, Adoni, Himachal Pradesh - 667062",EXFIB5263U,218910609721,3946578433252531,NRI,Karawal Nagar - Chacko,TYPH563810,True
+CUST867220,Theodore Vohra,1999-01-08,Female,+916146419,damyanti68@example.net,"77, Shukla Street, Vellore, Haryana - 178276",TSMBY0129I,240232659034,1169499878552,Current,Tadepalligudem - Walla,PQDY498673,False
+CUST343141,Gagan Bera,1951-03-05,Male,0411702017,charvi72@example.net,"645, Dash Ganj, Baranagar, Bihar - 101950",RVNMX5813M,927280388967,8860564978553,Salary,Gudivada - Srinivasan Road,LXGE655019,True
+CUST971040,Guneet Aggarwal,1957-06-13,Female,2828294491,eissac@example.com,"36/138, Rai Path, Gulbarga, Mizoram - 840251",WQKVK5340Y,170423658896,13104644776384,Savings,Chandrapur - Chand Chowk,WGJB708449,False
+CUST980599,Vedant Mani,2001-04-05,Male,0289620340,fnagarajan@example.net,"39/24, Dara Chowk, Anantapuram, Andhra Pradesh - 228641",QZIOM5320I,368188229107,344006691939,NRI,North Dumdum - Ravi Road,CTNT278974,True
+CUST721708,Om Sharaf,1969-01-19,Other,0193167186,kalaanay@example.net,"H.No. 90
+Muni Zila, Bhilwara, Meghalaya - 973124",YYHEB0000Y,355143143616,008883419603267,Current,Mumbai - Chawla Street,ZTAZ890573,True
+CUST937237,Imaran Modi,1973-06-11,Other,+913603936,bhavnasunder@example.net,"09/771
+Nori Road, Baranagar, Goa - 321662",LJYMK5096X,308141392957,9514299564525,NRI,Dhule - Karan Street,ZUMB989634,True
+CUST441142,Zinal Sridhar,1967-11-16,Other,+918129974,oliverravel@example.net,"40/07, Randhawa Marg, Morena, Tamil Nadu - 777140",XCTZT4608F,894972109903,3823673184363753,Salary,Tadipatri - Bala Road,CKXQ593354,True
+CUST798466,Umang More,1987-09-18,Male,5379795701,harishravya@example.com,"H.No. 45, Bansal Nagar, Jalandhar, Kerala - 021425",PEZMR8437X,639165492581,17949231183258,NRI,Ranchi - Dhawan Street,DQLL277811,True
+CUST182708,Mahika Sastry,2006-09-07,Male,+914148403,rkrishnamurthy@example.org,"29/955, Deo Street, Kota, West Bengal - 411363",MCHUF2911Q,536486341797,134613449125,Savings,Sirsa - Mistry Nagar,JSFN808673,False
+CUST231707,Ayaan Deshpande,1977-08-23,Male,3430627951,unnati69@example.org,"17, Kothari, Sagar, Maharashtra - 563075",AWTLZ5369P,430241330340,5020323602626371,Salary,Bhalswa Jahangir Pur - Parekh Chowk,LDRV473517,False
+CUST510403,Daksha Gopal,1947-02-08,Female,+911501225,sacharisaac@example.com,"09/635, Pillay Marg, Amroha, Uttar Pradesh - 479082",ICQIX3601V,946813576093,65606826643869,Current,Udaipur - Sama,XMPM046621,False
+CUST197598,Ekapad Magar,1966-10-02,Female,0432045932,ucchalsandhu@example.org,"12/05, Soni Ganj, Panihati, Rajasthan - 415848",QCAGA0316T,855604011253,0863142973914,Salary,Gorakhpur - Mammen Zila,NDSX345858,False
+CUST653313,Mugdha Jani,1993-01-04,Male,+916053518,tailorowen@example.com,"H.No. 565, Brahmbhatt Nagar, Siwan, Nagaland - 989636",DBMDX1492T,730953838759,438440836365195,Savings,Allahabad - Dara Chowk,EYZP277567,True
+CUST722472,Daksh Agarwal,2004-05-06,Male,+916383453,basakorinder@example.com,"50/08
+Anand Nagar, Hosur, Manipur - 489226",VDSUQ1872O,357329085998,7961757514947,Savings,Giridih - Dara Zila,WYGH361438,True
+CUST980365,Harsh Deshmukh,1950-08-05,Male,0330588167,eramaswamy@example.org,"H.No. 707
+Viswanathan Road, Nagaon, Haryana - 795561",ECTVH4181S,871286214277,178875631006622,NRI,Siwan - Mohan Marg,ZIAL077858,True
+CUST455023,Nihal Sani,1967-06-24,Male,6369786688,mittallakshmi@example.com,"78/714, Yohannan Nagar, Bareilly, Gujarat - 453699",POKGD8640P,455274327034,1661733153614,NRI,Bharatpur - Muni Ganj,PFFP413256,True
+CUST623862,Falan Oommen,1964-10-17,Other,6751671568,hematank@example.net,"H.No. 773
+Balay, Udaipur, Manipur - 129538",DCUAN0054Z,124320896627,9238648204099967,Current,Ambattur - Malhotra Circle,SQDQ442207,True
+CUST395335,Yashica Bali,1954-09-22,Other,+913934514,abhiram22@example.net,"716
+Minhas Zila, Kadapa, Haryana - 141458",YULEE4307U,303849202669,13081598895574,Salary,Uluberia - Lal Ganj,ULEY963605,False
+CUST959648,Odika Wadhwa,1973-07-18,Male,0529205654,upadhyayvidhi@example.com,"H.No. 02, Brahmbhatt Zila, Raurkela Industrial Township, Gujarat - 745146",PJIET4260Q,425728131944,308850624444,Salary,Bardhaman - Ganguly Circle,UCSU864195,False
+CUST603339,Simon Mandal,1966-11-21,Male,0567781852,mahajandaniel@example.com,"H.No. 923, Garde Path, Ballia, Arunachal Pradesh - 788262",RLLAX4545N,839415471209,59103634554993,Salary,Srikakulam - Mital,WCPO604153,True
+CUST696891,Meera Deshmukh,1967-03-11,Other,9576930184,acharyadamini@example.net,"H.No. 89, Dani Chowk, Bhubaneswar, Telangana - 412546",BPEEG3729Y,073188838997,5906439265013,NRI,Jehanabad - Bora Ganj,TDOE028286,True
+CUST945577,Vasana Devi,1949-10-11,Male,1265503369,dmannan@example.net,"04/93
+Nayar Street, Bhiwandi, Haryana - 812117",FASZG9041A,601790912626,328462426163,NRI,Bulandshahr - Sachdev Nagar,PKIN583043,True
+CUST641027,Arjun Ahuja,1996-03-25,Other,0559478053,lbhasin@example.net,"06/097, Bhargava Nagar, Bihar Sharif, Manipur - 183446",KIDGT2013H,802549305433,00910768891639,Current,Rajpur Sonarpur - Venkatesh Nagar,EZYK080589,True
+CUST341694,Rayaan Gupta,1988-05-16,Other,+916614881,sakshamdeshmukh@example.com,"91/48
+Nori Ganj, Rajahmundry, Nagaland - 319832",IHYCF7027I,215211487675,6302123885963790,Savings,Malda - Arora,DQRI815879,True
+CUST214516,Jason Srinivasan,1958-04-21,Female,0643205799,barkhadin@example.org,"145, Majumdar Ganj, Bidar, Tamil Nadu - 123795",QPCQM9605D,389297009147,998961278665,NRI,Suryapet - Konda Circle,UUUJ227834,False
+CUST241852,Zaid Samra,1993-02-05,Female,4703625399,turvirama@example.com,"H.No. 590
+Tak Marg, Meerut, Odisha - 205078",DWVII3480K,992618590429,49530338582930,Savings,North Dumdum - Madan Zila,CEGP979033,False
+CUST387675,Varsha Bawa,1969-07-01,Male,0235331357,siddharthkannan@example.net,"33/47, Chandran, Pune, Tripura - 883817",DJGFO9169R,478655518155,0745431801989,Current,Lucknow - Narain Zila,KPDN499929,False
+CUST188461,Wazir Panchal,1986-05-10,Female,0898712690,georgeramachandran@example.com,"54/638, Korpal Path, Ludhiana, Bihar - 828826",KSYHQ8005Y,851303145958,1603303378176864,Current,Rourkela - Raval,HEFG832222,False
+CUST612100,Rayaan Shetty,1990-09-14,Male,0039165271,umangshan@example.net,"H.No. 689, Bhatia Road, Sri Ganganagar, Haryana - 559074",LFMKO4744T,024807131441,55189884105641,Current,Munger - Bali Street,NKMS805688,False
+CUST950528,Vinaya Peri,1998-05-26,Other,4135848736,warinder71@example.org,"H.No. 593
+Gokhale Marg, Gulbarga, Bihar - 193007",WQHJG4756P,128748643427,950028981257995,Current,Raiganj - Deo Zila,XESI230557,True
+CUST384107,Ishanvi Mane,1950-03-24,Other,+913324297,agrawalomya@example.com,"798, Sen Nagar, Amaravati, Meghalaya - 086073",LFHVL0899T,186833093508,77934528858051,NRI,Ahmednagar - Karan Zila,ZNHF370235,False
+CUST659137,Falguni Sarin,1962-03-18,Other,+913727845,xkara@example.com,"21/37
+Kaul Chowk, Mira-Bhayandar, Chhattisgarh - 447461",CDUBP6185Q,018467783092,7419477939679,NRI,Bidhannagar - Mani Circle,TOCQ467168,True
+CUST865001,Meera Raj,1981-06-26,Other,+912012045,forum96@example.net,"H.No. 309, Manne Road, Bareilly, Bihar - 820498",RMKGH5358N,111533627884,849778612022,NRI,Mathura - Ramanathan Ganj,NGAO528768,True
+CUST420270,Neel Saha,1991-10-14,Male,+916387249,inagar@example.com,"944, Pillai Chowk, Berhampur, Tamil Nadu - 479708",DCTBI3545K,752226598330,17061238081990,Current,Yamunanagar - Edwin Road,RFUT053905,False
+CUST752087,Ishwar Dhar,1953-12-19,Other,+912330583,earya@example.com,"71/930, Brahmbhatt Road, Tadepalligudem, Tripura - 342756",DPYLN1154G,199023864836,95060424613312,NRI,Panvel - Puri Circle,CEST903260,True
+CUST264815,Mohammed Sunder,1978-11-23,Male,7834654427,owen64@example.org,"84/017, Sachdeva Marg, Bharatpur, Rajasthan - 785765",ZRXYK8123V,843134844728,168135090651152,Salary,Kozhikode - Bhat Chowk,WOZF478237,False
+CUST944487,Rushil Nigam,1950-12-21,Female,6070256054,vganesan@example.net,"343, Patil Nagar, Kottayam, Goa - 540164",ACFFB5851U,610609733560,3591349926441,Salary,Kadapa - Bajaj Nagar,DRXY092047,True
+CUST120510,Rajata Sampath,1977-03-20,Male,0340150558,xtara@example.net,"83/31, Puri Path, Gulbarga, West Bengal - 562677",VDLIZ5089H,900931627808,6329739740089979,Current,Nizamabad - Dara Chowk,ZKOZ838066,True
+CUST631287,Bimala Raja,1999-01-13,Male,0745557143,madhavi89@example.org,"104, Bhalla Zila, Pallavaram, Mizoram - 358870",GXYFU9721A,471570919316,584296902287,Savings,Hapur - Ramesh Nagar,GUTT707676,True
+CUST603541,Ubika Goel,2006-04-28,Female,7934584832,fluthra@example.net,"80/49, Guha Circle, Ozhukarai, Goa - 614368",HWDXJ7707G,779933258606,5230950064824082,Current,Meerut - Mani Circle,VMAC492967,True
+CUST944268,Shivani Chacko,2002-04-10,Other,0123270337,harshil20@example.com,"80
+Devan Street, Darbhanga, Punjab - 339816",CGWLG0913E,097021466872,16501351468289,NRI,Rajkot - Nagy Road,YOPK821273,False
+CUST677857,Madhavi Sampath,2002-06-15,Male,+914397506,wardabali@example.org,"47/18, Ganesh Street, Kolkata, Sikkim - 889114",EUTYG5344U,362873102189,6574926575112,Current,Tiruvottiyur - Suri Nagar,YJMH053412,False
+CUST336158,Dakshesh Prabhu,1956-03-06,Male,+917226401,mandersai@example.net,"H.No. 99, Murthy Marg, Dibrugarh, Kerala - 839801",FDYFE4866Y,520262985319,3851280686861172,NRI,Jalandhar - Rao Ganj,GIOL375844,True
+CUST635657,Karan Chauhan,1996-12-09,Female,0243626264,wpathak@example.com,"37
+Mutti Road, Kota, Goa - 832523",RVAIV6679K,293257209888,592859751659826,Current,Haridwar - Naidu Marg,KSOT693878,False
+CUST717358,Arjun Bora,1975-09-21,Male,0544143683,ssibal@example.org,"80, Deshpande Nagar, Indore, Rajasthan - 151933",GGQZG8842P,524689206837,6244243275007207,NRI,Lucknow - Merchant Marg,XWYP104542,True
+CUST603621,Ekapad Zacharia,1975-08-28,Female,7779490536,laban83@example.com,"H.No. 738, Kumar Zila, Raebareli, Rajasthan - 091729",FKVVQ4753P,583377020982,63881269062611,NRI,Morbi - Barad Nagar,KYSF164871,True
+CUST650308,Udarsh Bajaj,1970-12-28,Male,+910822989,mastertejas@example.org,"92, Dora, Mango, Maharashtra - 701529",MNMDW0185R,921980380904,90019108620385,Salary,Ahmednagar - Basu Road,LLWG166055,False
+CUST922015,Gaurav Soni,1970-01-22,Female,0588781900,chhabrairya@example.com,"H.No. 07, D’Alia Path, Kharagpur, Rajasthan - 539047",GNDSY2587Z,880527783539,617407754789,Savings,Amroha - Deep Ganj,JCKS009564,True
+CUST452349,Charles Suresh,1961-02-04,Male,0961799843,spatla@example.org,"H.No. 821
+Loyal Zila, Thrissur, Mizoram - 064379",ALAYE5030Q,264613148519,9441216700757508,Salary,Mau - Muni Marg,YKUI813060,False
+CUST321571,Gauri Chokshi,1979-05-25,Male,0918301207,bthaman@example.org,"56
+Kurian Ganj, Satara, Andhra Pradesh - 764390",FFADP2357Q,460185205661,032400108428532,Savings,Dehradun - Trivedi Nagar,TKCK022604,False
+CUST606658,Xalak Issac,1975-04-16,Female,4178747896,ibhargava@example.org,"24/68, Shere, Dehri, Sikkim - 605151",FMKLF0936Q,181313082797,853441893786498,Savings,Chittoor - Vora Road,KYSC463132,False
+CUST560711,Odika Bhasin,1958-12-25,Male,7559731426,deomya@example.com,"89, Mammen Ganj, Jamshedpur, Andhra Pradesh - 975546",HPAHE2818O,029010245757,366055741813,Savings,Bhavnagar - Tailor Path,QBRN644540,True
+CUST145052,Onveer Naidu,1961-04-22,Other,0812224417,babuaashi@example.org,"83/51, Issac Zila, Bhimavaram, Rajasthan - 105941",NCJZW3872B,440009064198,3981923383764894,Current,Meerut - Bath Marg,VSDM854447,False
+CUST538621,Nitara Kala,1969-01-18,Male,+910466855,deshpandefalak@example.com,"H.No. 13
+Tripathi Zila, Vadodara, Chhattisgarh - 761727",BPHFJ9183F,898412648215,75186777289637,Savings,Sangli-Miraj & Kupwad - Shah Road,EXMF273759,True
+CUST836785,Pratyush Bedi,1982-08-02,Female,0359311905,sundermeghana@example.org,"66/24, Mander Chowk, Kollam, Maharashtra - 450202",FBJQH5095D,683257280802,4006816354472743,NRI,Jamshedpur - Dhawan,QNDF397777,True
+CUST499702,Triya Krishna,1985-11-04,Female,+915666693,qbobal@example.com,"067
+Nanda Marg, Jabalpur, Meghalaya - 943544",MGLTD3039K,589701530231,229792882859,Salary,Ulhasnagar - Modi Road,LALQ236353,False
+CUST185504,Nathaniel Doshi,1992-05-17,Male,0381295095,kundatara@example.com,"06/46, Sura Marg, Nanded, Himachal Pradesh - 928456",AVRKA7253Q,990617708860,7163204975899,Current,Karawal Nagar - Sharaf Path,DBLQ829327,False
+CUST758123,Sai Tandon,1977-06-10,Other,+919512905,gayathrimohanty@example.com,"49/50, More Circle, Ghaziabad, Uttar Pradesh - 516522",QWKKL1913A,125649254544,72586021830178,Savings,Darbhanga - Hayre Marg,PJPS678905,True
+CUST538380,Zaid Bath,1959-12-19,Male,2519682346,mukherjeesai@example.net,"014, Saran, Karnal, Gujarat - 902490",HETRM3624W,016106778889,53709494640481,Salary,Haldia - Devi Chowk,RTDR418881,False
+CUST371973,Xalak Loyal,2004-10-10,Male,5079660729,bimala59@example.com,"208
+Raman Road, Chandrapur, Telangana - 295408",NDDQN9205B,436330790572,835140638641433,Salary,Bettiah - Mane Road,RPCT272746,False
+CUST969422,Logan Varma,1990-10-06,Other,+916716691,dipta49@example.com,"42/03, Barad Street, Kozhikode, Maharashtra - 995790",XOJWJ9383E,441159386627,197789354342370,Current,Panchkula - Ganesan Ganj,GFYB720836,True
+CUST535808,Henry Dubey,1950-11-19,Female,0117981576,satheupma@example.net,"H.No. 81, Chaudhuri Marg, Unnao, Rajasthan - 125521",YXAMI6014V,002642062294,200100021638,Current,Hazaribagh - Vyas Street,FNXO534826,True
+CUST334089,Raksha Krishnan,1994-06-02,Male,+919500749,rameshdavid@example.com,"85/94, Sachdev Road, Chandrapur, Andhra Pradesh - 511830",RZMJK7218J,601246703996,8094708660948,Current,Thrissur - Mannan Zila,TAOP346857,True
+CUST362824,Vasudha Issac,1985-06-28,Male,0300971333,ishanvideol@example.com,"H.No. 606, Malhotra Road, Panihati, Goa - 756215",BJOYB0494W,229568948047,1556181599479954,Savings,Ujjain - Arora Marg,NITI289405,False
+CUST434706,Tejas Kannan,1963-10-12,Other,+915555450,indira38@example.net,"13/581, Virk Road, Gudivada, Telangana - 808525",LXWYV3496H,382575879878,615869514392,Salary,Dehri - Palan,VBXK195585,True
+CUST391174,Vansha Gole,1991-11-02,Other,+919474547,ikbal09@example.org,"54/14
+Ramanathan Path, Chittoor, Madhya Pradesh - 728481",HQGAK1348J,496285594378,5032816322044,Savings,Loni - Lad Nagar,OVGI124664,False
+CUST128941,Patrick Sabharwal,1946-10-06,Male,6767368969,kdhaliwal@example.com,"41, Gokhale Circle, Pune, Sikkim - 851824",JLMAV2584P,361350555015,619217647079,Salary,Baranagar - Nagarajan,HZQC117212,True
+CUST554966,Tanvi Merchant,1955-10-04,Other,+917547756,ishwarprashad@example.com,"03, Taneja Road, Sasaram, Andhra Pradesh - 118072",TIDFU9435D,040679475179,227052585108753,Salary,Naihati - Kara Path,OSYQ129216,True
+CUST148052,Ikbal Koshy,1987-03-19,Female,+914605336,hemang04@example.com,"H.No. 692, Gala Road, Ujjain, Meghalaya - 715062",LPLVN4158P,393682928503,040651874601158,Savings,Kamarhati - Sheth Path,RQSC781629,False
+CUST538457,Bhavani Johal,1990-03-23,Male,+916005988,vnath@example.org,"H.No. 734
+D’Alia Nagar, Kakinada, Assam - 504824",PSGXL9225X,200872042189,403435254501763,Salary,Indore - Parsa Chowk,LFUK770380,True
+CUST661863,Charan Mander,1944-09-05,Female,7363968643,kadeindira@example.com,"75
+Kakar Road, Asansol, Kerala - 764086",TBHDX8563G,452195792962,0538915141392413,NRI,Giridih - Mann Zila,CSJZ261060,True
+CUST575269,Bhavika Lata,2000-03-01,Female,8994896546,manderoeshi@example.com,"48/957, Bhattacharyya Street, Korba, Uttar Pradesh - 182124",ONVES3099N,901652088708,15808246863333,Savings,Sambalpur - Bhargava Zila,POHW601412,True
+CUST349574,Januja Sant,1952-08-31,Male,0397715195,mmisra@example.org,"H.No. 37, Nagarajan Circle, Tiruchirappalli, Rajasthan - 940224",AWNTN7460F,024490988081,7151936311424348,NRI,Nadiad - Sehgal Marg,GOVR592491,False
+CUST735478,Ekta Kade,1962-10-17,Female,+917367548,dadaijaya@example.org,"51
+Kohli, Akola, Karnataka - 163314",XORZE0704G,242016619898,9143560070604,NRI,Mumbai - Patla,DTHF307257,False
+CUST206266,Anya Wagle,1980-05-21,Other,7042907446,bsridhar@example.com,"88/479
+Arora Nagar, Danapur, Uttar Pradesh - 773075",PRBRE7975H,776562472215,5729817090877,Current,Kharagpur - Parmer Street,OMAW204939,False
+CUST249984,Falak Bora,1985-08-30,Other,0137434476,widishasahota@example.net,"01, Dugar Circle, Gorakhpur, Bihar - 898539",VWIKS3438C,532803013018,7831957887556,Current,Amravati - Sehgal Chowk,MBCM979222,True
+CUST104011,Anusha Prabhakar,1969-11-22,Other,+912426973,henrybumb@example.com,"H.No. 17, Pillai Ganj, Saharanpur, Bihar - 468252",TRCJF4688E,485127552024,740871248289,Salary,Kavali - Ravel Zila,EDIM330194,False
+CUST445804,Zayan Pall,1985-02-07,Female,0300777659,ramdhruv@example.net,"75, Chahal Road, Silchar, Odisha - 002484",TEMVZ8464G,515315711333,895655872552,Current,Thrissur - Sarin Ganj,EBKX799180,True
+CUST857064,Turvi Parmar,1956-11-29,Female,0158675482,xalak55@example.org,"18/51, Verma Street, Ratlam, Arunachal Pradesh - 201771",FIQAG7727W,679183622438,111415192958342,Salary,Nagaon - Desai Path,FSVH210392,True
+CUST937779,Tanish Tata,1946-01-08,Female,+917519813,bimala05@example.net,"H.No. 42, Sankaran Nagar, Hazaribagh, Punjab - 333070",POEQP4816W,152220232973,775790073072759,NRI,Haldia - Kakar Marg,TVNC124187,True
+CUST121064,Raksha Borra,1985-04-03,Female,+919644798,asavant@example.net,"33, Bajwa Path, Bahraich, Kerala - 819748",ZKDVN0347N,636162677658,303493897528,Current,Pali - Bose Circle,LDQN344307,True
+CUST260801,Gaurang Magar,1995-08-17,Other,2607916141,xitidora@example.com,"03
+Kade Street, Ongole, Manipur - 077140",KDFVD5491D,379953444532,902363828202,Salary,Bidar - Pau Chowk,XXLL376221,False
+CUST172719,Chatura Iyengar,1980-12-10,Female,9150604103,xitiroy@example.net,"100, Varma Marg, Warangal, Chhattisgarh - 277812",RTACK9763O,247911875348,51197548214140,Salary,Dehradun - Korpal Marg,TJRN512762,True
+CUST543846,Michael Issac,1986-03-12,Other,0739396272,seshadrijeet@example.com,"59, Sridhar, Pudukkottai, Tamil Nadu - 612095",XQYFE3460N,670339082591,56419928678435,Savings,Hazaribagh - Narain Zila,JOHT891542,True
+CUST777001,Oviya Gara,2004-08-03,Male,+918957412,jhalakrajan@example.net,"76/09, Kade Chowk, Kota, Manipur - 794254",GSPYW8659T,364138662006,77840471199721,Current,Sultan Pur Majra - Gill Path,PJRV462724,False
+CUST862203,Jeet Rege,1997-12-15,Male,3803647530,varghesetanvi@example.org,"14/35, Srinivasan Zila, Medininagar, Haryana - 107845",UJJEU8846C,728749346957,5814211975841,Salary,Salem - Puri,AKXM323808,False
+CUST364941,Alka Hari,1982-08-31,Other,0000010588,joshivasudha@example.org,"445, Nanda Circle, Agra, Telangana - 678833",JXXIL5561T,752139385183,889092389363254,Savings,Noida - Pillay Circle,KBAF590521,False
+CUST397417,Zilmil Naidu,1974-05-23,Male,0350518959,pramanathan@example.net,"H.No. 35
+Taneja, Kota, Nagaland - 901429",QPPNC7227U,004276541966,654916929075186,Salary,Guwahati - Sagar Chowk,MLOT140454,True
+CUST602837,Omisha Dutta,1956-08-14,Other,0060334425,ssolanki@example.org,"H.No. 112, Rai Ganj, Siliguri, Jharkhand - 134298",BHEWO4364L,075779874132,8288493928326,NRI,Muzaffarnagar - Tiwari Chowk,YGQI561401,False
+CUST845797,Aadhya Hayer,1985-01-20,Male,+913673356,nandini37@example.net,"819, Chandran, Singrauli, Uttarakhand - 442774",SZINH0689D,281964013194,147383557510838,Salary,Jamalpur - Bhakta Ganj,FEKJ896167,True
+CUST802981,Damyanti Saxena,1968-01-06,Female,0708507499,radha23@example.net,"80
+Ramanathan Road, Mango, Himachal Pradesh - 895289",QNORA9566N,354613654969,3564297333504884,Current,Salem - Jaggi Nagar,AMYJ845123,True
+CUST607299,Lopa Dara,2005-07-04,Female,8289335187,deepapillay@example.net,"H.No. 81, Chatterjee Ganj, Muzaffarnagar, Meghalaya - 858031",WLKSB5817F,520843490694,375125058818,Savings,Rajpur Sonarpur - Saraf Ganj,VYPE448292,True
+CUST634860,Rishi Tata,2003-12-01,Female,0264071838,uvora@example.net,"83/57
+Randhawa Ganj, Bhusawal, Odisha - 490374",EVMQH3458J,018574472061,0646784091340,NRI,Sri Ganganagar - Gill Chowk,KNJA165105,False
+CUST671797,Omisha Pradhan,1945-08-05,Female,0510071792,riadyal@example.org,"H.No. 204
+Mander Street, Guna, Gujarat - 558092",RNYFG8359U,548695897204,292200245636734,Current,Jalgaon - Balan Nagar,EUEZ282603,True
+CUST663324,Nikita Rau,1954-01-19,Male,+918524163,xkibe@example.org,"01/812
+Murty Zila, Jalandhar, Tripura - 788813",TSIQJ1048E,901735734229,708404425063,Savings,Nizamabad - Pingle Path,VOER646502,True
+CUST926105,Hemang Dugar,2005-08-26,Male,+915360181,gabawilliam@example.com,"753, Bassi Chowk, Amravati, West Bengal - 945170",PMRXD0813V,840169014698,6575900883981156,Salary,Nadiad - Parekh Nagar,MANP169437,False
+CUST899474,Daniel Nair,1958-11-16,Female,0450184209,imaran96@example.net,"72/831
+Keer Street, Uluberia, Manipur - 145854",AKPTD4103O,923469676973,7006696363732477,Savings,Kavali - Mahajan,SMTR083040,True
+CUST822590,Anthony Bansal,2006-07-06,Female,0979582705,acharyakamya@example.org,"38/866, Thakur Chowk, Sultan Pur Majra, Madhya Pradesh - 186087",FIZGQ8452V,621333747096,81232646171912,Current,Hospet - Rastogi Chowk,CVXD063890,False
+CUST610979,Sanaya Bajwa,1958-11-27,Other,0455784814,azaan35@example.org,"H.No. 380
+Gade Street, Ghaziabad, Tamil Nadu - 760430",UHHHY5804A,851359418740,1649634447805,Salary,Thoothukudi - Kata,TXIT533291,True
+CUST278711,Vedika Ravi,1999-03-10,Female,+918807476,samiharita@example.net,"569, Balan Marg, Patna, Meghalaya - 154806",CFOEU8240V,189528460236,8541648896519732,Savings,Nadiad - Mishra Ganj,DLRR424161,True
+CUST683902,Pallavi Deshmukh,1960-10-10,Other,0572545487,aarini07@example.org,"39/60
+Basu Marg, Amaravati, Manipur - 050831",ZYLBO7330I,274865592986,9300863469646,Savings,Nizamabad - Purohit Chowk,ACPK437756,True
+CUST986515,Wyatt Pingle,2001-06-19,Other,7460808686,ltalwar@example.org,"558, Sidhu Marg, Kota, Bihar - 220656",QJFGK1899D,455507878180,7894199083661,Savings,Vellore - Kulkarni Path,VRQN691421,False
+CUST244631,Keya Madan,1948-08-01,Other,+919357125,radhika73@example.org,"13/173, Bobal Street, Dhanbad, Gujarat - 333363",PZZJK3791D,171869659429,822731702354,Salary,Serampore - Pathak Ganj,YFOP266789,True
+CUST419381,Tanmayi Devan,1959-10-02,Male,3543300257,teerthdubey@example.org,"11/19, Keer Marg, Ajmer, Arunachal Pradesh - 670059",ROJYX9941A,404632412060,71440102531584,Current,Karawal Nagar - Raj Path,LNBI106406,False
+CUST123544,Warinder Gandhi,1964-07-20,Male,+912415734,etapall@example.net,"97
+Nagi Zila, Gorakhpur, Madhya Pradesh - 465782",UWZCG2664V,042825440252,23392900933734,Salary,Haldia - Suri Ganj,KUPC816413,True
+CUST611112,Yochana Behl,1984-05-27,Male,6242680966,anmolsunder@example.net,"H.No. 726, Bassi Chowk, Ulhasnagar, Andhra Pradesh - 792772",RNCCG9409E,121755541431,90296188203975,Current,Dehri - Halder Road,ZDSK360216,False
+CUST234394,Aarnav Ramakrishnan,1969-10-29,Female,0480340514,qdeo@example.com,"H.No. 844, Barad Circle, Munger, Kerala - 187190",KFKJC6020R,342623292345,8007675469941,Salary,Bidhannagar - Rege Marg,WOKM575466,True
+CUST901984,Deepa Sha,1985-12-28,Other,0230976796,kohlifariq@example.net,"64/423
+Khatri Path, Akola, Kerala - 989702",UOOVW3103C,944380866562,644931190596407,Salary,Karimnagar - Arora Chowk,UZFO565342,False
+CUST153356,Wahab Varkey,1961-03-27,Other,0799729605,johalyashawini@example.net,"151, Chaudry Marg, Tenali, Tamil Nadu - 959307",NTTHX0637H,241533748830,1898260480667193,Current,Silchar - Ramakrishnan Road,PBRF045038,True
+CUST113584,Patrick Sathe,1949-06-18,Male,+915958653,lakshchhabra@example.com,"774, Chaudhuri, Malegaon, Punjab - 257445",GLLPW8562D,530332965133,872654361947,Savings,Narasaraopet - Iyer Marg,CBVA373808,True
+CUST334102,Luke Sur,1996-07-21,Male,0989619538,tejassarma@example.net,"H.No. 766
+Prabhakar Road, Asansol, Sikkim - 817994",PDAOX5448X,726992928907,6807745095209,Current,Kakinada - Koshy Street,TJZP214713,True
+CUST108252,Urvi Mallick,1983-06-29,Male,4377891483,deepayadav@example.com,"H.No. 38
+Bail Chowk, Jamalpur, Sikkim - 619529",UFDXM7558J,127300498799,2305272952501,Savings,Vellore - Chowdhury Circle,HUPJ105157,True
+CUST265059,Qabil Bajwa,1968-04-02,Other,+919797581,yoshita62@example.org,"H.No. 180, Bhasin Marg, Deoghar, Jharkhand - 525602",UAHJT0612H,878659616208,421942956007966,NRI,Rohtak - Vaidya Marg,LICQ967293,False
+CUST860701,Isaac Sachar,1973-06-18,Female,6438292941,chackothomas@example.net,"H.No. 756
+Thaker Zila, Kanpur, Mizoram - 398890",XCYGG7572L,055022617837,401335754052272,Savings,Kharagpur - Narayanan Chowk,WSHE483504,False
+CUST533702,Charvi Singh,1954-10-09,Female,1360983843,duttaqabil@example.net,"H.No. 697
+Gill Marg, Adoni, Manipur - 918123",POFER0335V,391074524153,721353165515,Savings,Chennai - Das Ganj,TWIM733817,True
+CUST711683,Harish Chhabra,1994-03-27,Male,0806180005,ymitter@example.com,"059
+Kadakia Zila, Bangalore, Meghalaya - 520028",OKUJU0789U,455059201040,316708419417,NRI,Ghaziabad - Nair Road,MZEY519554,False
+CUST174253,Saksham Kalla,1963-12-23,Female,+917094496,pillayzayyan@example.net,"57
+Bhatt Marg, Ramgarh, Goa - 859106",VRCXS0900K,758433921698,0318699543611823,Current,Nanded - Wason Road,EEPU910874,True
+CUST415379,Nachiket Palan,1975-08-22,Male,0236622327,dayamaikulkarni@example.net,"248
+Narasimhan Chowk, Salem, Madhya Pradesh - 807713",HTVYG3532K,768270284547,2320130204129,NRI,Akola - Shenoy Street,LVCE719935,False
+CUST785570,Jyoti Varkey,1951-04-21,Female,+917794872,soodisaiah@example.org,"28/658, Kalla Road, Medininagar, Tripura - 731588",IAYOS1098B,489166222066,853144538799315,Salary,Mau - Kapur Nagar,EGNP269006,False
+CUST105613,Zarna Anand,2001-06-08,Female,+917621888,rsavant@example.org,"H.No. 402, Vohra Road, Nizamabad, Andhra Pradesh - 802067",BRWBR0453U,593247584502,05063156027801,Savings,Kishanganj - Bal Zila,LFID614891,False
+CUST911013,Laksh Sharaf,2006-08-30,Other,0231867833,omkaar18@example.com,"H.No. 91
+Dass Circle, Alwar, Punjab - 429799",BRIJZ4900D,285228202728,833311943125,NRI,Raipur - Shroff,JSWW019886,True
+CUST248651,Nimrat Subramaniam,1946-06-11,Male,3243965532,lsur@example.com,"48/230
+Malhotra Ganj, Bhiwandi, Manipur - 739554",PTFLU2967T,707878830597,392075648404181,Current,Khammam - Dayal Circle,UHLX574077,False
+CUST364173,Abhiram Jhaveri,1945-04-08,Female,1526613425,samaucchal@example.org,"85/99
+Buch Zila, Morbi, Telangana - 968385",QMWJU3214V,824311681009,618340715868,Current,Dibrugarh - Salvi Chowk,JHUQ538241,False
+CUST857129,Vrinda Om,2000-11-16,Male,8138825211,tanmayimane@example.org,"97
+Sibal Path, Rewa, Telangana - 763218",WDQRT5779L,867505114789,589653816634127,Savings,Bhiwandi - Bhatia Nagar,ZGQH316900,True
+CUST938585,Amrita Hayer,1946-09-12,Other,+914665359,nishananda@example.com,"H.No. 61
+Kari Road, Gudivada, Rajasthan - 243753",NALLS1046F,424705494119,945379661004,Savings,Kalyan-Dombivli - Chakraborty Circle,TGBX996502,True
+CUST219693,Max Rattan,1965-09-14,Other,0041021685,chamanbalay@example.com,"60/353
+Goyal Path, Akola, Odisha - 214819",UOFIQ0023V,100319870613,2002159569306400,Savings,Kulti - Sura Ganj,ILKM446433,False
+CUST636296,Forum Gara,1974-07-02,Female,0433151551,msani@example.net,"68/671
+Sawhney Street, Orai, Sikkim - 903483",TYPSV7091P,834453518303,582458791513693,NRI,Panvel - Pillai Marg,WPUC573322,True
+CUST404201,Yashawini Arora,2001-08-17,Female,0500109130,ganeshamruta@example.com,"91/963
+Golla Road, Hajipur, Assam - 684660",ZUPHO2572H,699216908794,870571707614769,Savings,Kalyan-Dombivli - Kaul,TSLJ542418,True
+CUST250271,Idika Memon,2001-11-22,Female,0529801145,unnigoel@example.com,"H.No. 82
+Sharaf Street, Erode, West Bengal - 603305",QIBWN4107R,635674610178,7047070501099197,Savings,Thrissur - Shan Ganj,RHBK355972,False
+CUST983323,Hritik Sibal,1959-09-16,Female,+916023797,ekbal84@example.org,"135
+Shan Path, Haldia, Haryana - 756606",CNKGO5978J,642107178943,533019367669,Current,Orai - Sami,JBRG928267,False
+CUST401979,Anay Jani,1945-06-17,Other,+911741138,dharsamaksh@example.org,"H.No. 927
+Nayak Street, Panipat, Andhra Pradesh - 597340",DFGHP8206Y,644337590285,4309676053523382,Savings,Fatehpur - Chad Path,VTLO166142,True
+CUST668741,Henry Ravel,2006-04-15,Other,+912883803,garajanuja@example.com,"H.No. 45, Zacharia Ganj, Muzaffarpur, Assam - 366398",EUTMW3000I,755089499832,2381429561743685,NRI,Mahbubnagar - Dewan Road,ETRY951705,False
+CUST894680,Girik Kashyap,2003-03-29,Male,0395432136,pdugar@example.org,"H.No. 348, Shankar Street, Hapur, Uttar Pradesh - 685247",TLUSU8320K,869230649681,751913857240263,NRI,Durg - Chaudhari Path,ABGU309755,True
+CUST380120,Ekansh Sodhi,1992-04-11,Male,5294761304,sehgalanya@example.net,"670, Nadig, Korba, Tripura - 115129",PYDOS2121W,449136312954,6536409372563546,NRI,Jaunpur - Chaudhary Marg,IQPT414721,False
+CUST748297,Brinda Kale,1949-08-25,Other,+917722479,kevinbhat@example.com,"87
+Sur Ganj, Akola, Haryana - 754586",UUTOQ8037W,414793561096,54431581053915,Current,Uluberia - Ray Chowk,FUNX261683,True
+CUST817875,Logan Bajaj,1974-06-17,Other,2485751197,prasadaayush@example.net,"94, Bir Zila, Mahbubnagar, Odisha - 279600",VSMPW4131N,101139831014,451427226829,Salary,Katihar - Chada Circle,REZC354268,True
+CUST136425,Raagini Parsa,1988-02-13,Male,+915887754,jacobhans@example.net,"475
+Mall, Durg, Gujarat - 644329",DGUJX1153E,967079151360,073606874007170,Salary,Ongole - Gaba Ganj,NTVS991940,True
+CUST363045,Krish Deshpande,1984-03-05,Other,2521843547,laksh01@example.net,"H.No. 905, Nagarajan Zila, Raebareli, Haryana - 279502",UEURE3519E,001693872482,283691720406544,NRI,Jaipur - Acharya Road,YJKA679523,True
+CUST652660,Banjeet Sachdev,2004-11-02,Female,+912719368,hayersamar@example.org,"H.No. 031
+Tailor, Guna, Tripura - 211057",XRERY9993A,491447329112,62663464292131,NRI,Patiala - Ravel,UZQE888997,False
+CUST433305,Balendra Lal,1949-01-31,Male,8634457960,vasudhanagarajan@example.net,"H.No. 988, Bhattacharyya Zila, Kamarhati, Odisha - 034073",JDEGI1468F,986375649178,378117293114,Current,Visakhapatnam - Chada,DRBC568437,True
+CUST626162,Aarush Dada,1965-10-11,Female,+918875791,kalpitvarughese@example.org,"H.No. 784
+Kara Chowk, Chinsurah, Bihar - 722345",NQVUS6421V,077863548481,8858981342070271,NRI,Navi Mumbai - Buch Circle,ZUET696856,False
+CUST683825,Ikshita Edwin,1979-12-12,Other,+913116541,falak66@example.org,"261, Kari Zila, Mirzapur, Andhra Pradesh - 060648",BGHCX5016S,158961632984,03335458529942,Current,Bilaspur - Nadkarni Nagar,XRJD594912,False
+CUST452906,Brijesh Madan,1977-12-06,Male,+910818505,prao@example.org,"121
+Chakraborty Circle, Gangtok, Jharkhand - 950441",JHAZU5922K,951684344258,563648538700,NRI,Madanapalle - Hayer Circle,QMSP937236,True
+CUST107578,Devansh Gaba,1968-08-09,Other,9971060635,sehgalxiti@example.net,"H.No. 59
+Bhatti Road, Bhalswa Jahangir Pur, Arunachal Pradesh - 588771",OITLB5625N,246955491684,0321799298153,Current,Guna - Gaba Circle,WOBE530287,False
+CUST493358,Hemang Kulkarni,2001-11-11,Other,3288067433,kevin56@example.net,"06/65, Lala Circle, Hubli–Dharwad, Manipur - 148238",SEQSK3056W,896548759452,570079366610255,Savings,Amaravati - Deol Ganj,TGYS411379,False
+CUST802191,Sudiksha Tella,1971-10-30,Male,+911969609,ramanrachana@example.net,"492
+Edwin Nagar, Amritsar, Assam - 425000",SHHCT4604Z,124402384806,977738385980209,Salary,Avadi - Chaudhary Path,YFZQ381009,True
+CUST302497,Upma Grover,1957-06-08,Male,0598115691,shivanikota@example.net,"984, Khanna Path, Bathinda, Mizoram - 007688",AGWEM4706M,110724446072,0087418722728,Savings,Aizawl - Ben,JHUP372297,True
+CUST634646,Aryan Palla,1970-03-24,Female,5811895455,zayyan55@example.com,"67/84, Loyal Circle, Satna, Gujarat - 513855",AMBBZ3558F,827478152168,4434929614425691,Current,Guwahati - Garg,XEJL368900,True
+CUST691929,Chakrika Chand,1986-05-01,Other,+911637726,muttizashil@example.org,"99/82
+Gopal Road, Yamunanagar, Arunachal Pradesh - 683589",JTMPI1508W,271889057805,25229522163686,Salary,Gurgaon - Kapadia Nagar,FNNW351525,False
+CUST489957,Shivansh Menon,1957-12-13,Other,8319626708,joshuagoel@example.net,"04/859
+Bandi, Navi Mumbai, Sikkim - 911778",UJAJG7028B,377019776255,920162492000694,NRI,Tirunelveli - Sawhney Zila,LATT836781,False
+CUST974757,Nimrat Dayal,1946-11-18,Female,0857474092,chaudryyasti@example.com,"30/59
+Kari Nagar, Haldia, Himachal Pradesh - 091451",OLJIR5306N,445799240861,3207930723382,Salary,Bettiah - Parsa Street,WVQY287766,False
+CUST601666,Adya Mandal,1950-06-29,Other,8894165527,aarini28@example.com,"403, Ghosh Street, Kolhapur, Nagaland - 780843",PLBQV2381J,861002793068,4391728331132917,Current,Loni - Sachdeva Circle,MNYE309580,True
+CUST197851,Brijesh Comar,1987-08-11,Female,8870720762,tarakseth@example.net,"792
+Kibe, Deoghar, Odisha - 300909",QEDLD5538W,824223834037,348335868545973,Salary,Bardhaman - Barman Nagar,PQXV173700,False
+CUST487174,Tristan Bir,1944-10-17,Male,0658713416,trivedizilmil@example.com,"H.No. 674, Wali Zila, Raipur, Mizoram - 872123",GBWZT1701L,186123933567,7953727920501582,NRI,Latur - Issac Marg,SGGY497945,True
+CUST699902,Omkaar Issac,1986-02-13,Female,+912642924,imaran26@example.com,"H.No. 14
+Goswami Road, Narasaraopet, Meghalaya - 189148",GEFVY3336W,932875741003,953922284044826,Current,Ballia - Shetty Marg,MPTN662599,False
+CUST329080,Jai Tailor,1979-05-13,Female,0094067052,cchaudhuri@example.net,"333, Devi Path, Muzaffarpur, Punjab - 964228",GGCFT0600Z,493522684594,84809593594691,Current,Panchkula - Magar Chowk,QBHL025670,False
+CUST511227,Yochana Kata,1974-05-03,Male,+918139876,chadahitesh@example.com,"H.No. 42, Trivedi Nagar, Bhopal, Tripura - 880860",BIBRR7863C,150496987356,0907616913438968,Salary,Firozabad - Kakar Nagar,DVSQ178061,False
+CUST620602,Ekbal Date,2004-02-04,Female,2662514030,manya18@example.net,"H.No. 244
+Golla Road, Bhusawal, Kerala - 443068",ZDBLT3676R,553688437762,126358009107171,Savings,Anantapuram - Savant Nagar,YTBH643433,False
+CUST111186,Ekaja Behl,1981-07-02,Other,+914064204,lakshkari@example.org,"74, Sankar Street, Thanjavur, Rajasthan - 935969",CFJAR7817X,797062808445,1603543257018939,NRI,Ambarnath - Salvi Circle,HQMB115830,True
+CUST414262,Arya Tripathi,1987-02-13,Male,+918138675,iryakhalsa@example.net,"H.No. 56
+Master Street, Sagar, West Bengal - 118027",VPEJY2742U,982928647948,16964383795228,Current,Nizamabad - Korpal Circle,WLWA082797,True
+CUST924384,Yashvi Majumdar,1946-11-26,Female,8953611364,wahab59@example.com,"32, Manne Zila, Thoothukudi, Rajasthan - 345207",RDHPR0186H,255822923249,0197181453011022,Salary,Malda - Kant Chowk,OHGB835993,True
+CUST705351,Anay Varma,1996-05-06,Other,0188476458,jasmit84@example.net,"H.No. 52
+Bath, Vijayawada, Uttarakhand - 463215",UOBKK8079Y,145635022524,611154939750,Salary,Bidar - Yogi Nagar,YAJP032788,False
+CUST653341,Veer Kade,1964-04-24,Male,0635191736,jpradhan@example.net,"H.No. 605, Choudhury Road, Bongaigaon, Uttar Pradesh - 390785",VDLDZ7111D,912495920997,364034732711846,Current,Dibrugarh - Mahal Road,URKB048359,False
+CUST564269,Advay Jaggi,1963-05-17,Female,4471950446,ubajaj@example.net,"30/92
+Chanda Path, Noida, Jharkhand - 374575",ALVUZ2390A,621385571539,492465639711875,Savings,Tiruchirappalli - Bassi,LUJZ788508,False
+CUST442226,Yagnesh Chacko,1952-08-10,Male,+913568260,tperi@example.net,"503
+Lad Ganj, Bijapur, Madhya Pradesh - 933658",DQWJS2637M,827118536797,36992596179489,Salary,Kharagpur - Butala Chowk,NQBD454941,False
+CUST814686,Kritika Mital,1997-02-23,Male,0783955369,vihaan07@example.org,"34/40, Nanda Path, Coimbatore, Madhya Pradesh - 480476",MGCDJ3443L,868399540579,80278060938224,Current,Maheshtala - Anne Marg,IMXJ300753,True
+CUST572344,Gaurika Dhar,1977-12-22,Female,+914314803,ahegde@example.com,"57
+Saran Chowk, Bhatpara, Nagaland - 543839",CPYUV0645E,868436195809,02841398065861,NRI,Uluberia - Ramaswamy Circle,UGOW422573,True
+CUST448863,Tristan Rattan,1945-07-15,Male,6202614480,kairaghavan@example.org,"801
+Kapadia Nagar, Sonipat, Bihar - 790848",FYCVU6136Q,919296002572,440676050651,NRI,Anantapuram - Rau,VUQS394278,True
+CUST204177,Maya Pradhan,1982-01-21,Other,+913794979,triyasuresh@example.org,"29/54, Nayar Marg, Rewa, Manipur - 606083",SAVGE8365W,995926825672,9632507650115,Current,Pune - Pall Zila,BLDE201906,False
+CUST962426,Jatin Bhalla,1983-07-12,Other,2437401145,smohanty@example.com,"H.No. 04, Nagarajan Circle, Yamunanagar, Goa - 343343",GYBQG4389E,686882088271,6449113801273679,Salary,Shimla - Gara Road,GCKC261756,False
+CUST794674,Anmol Chander,1993-08-14,Female,+917329272,chavvinarang@example.org,"H.No. 501, Chawla Nagar, Chandrapur, Telangana - 932372",XFJWF8139S,034315432030,7140211357270196,Current,Panvel - Lanka Marg,CTYR907400,False
+CUST575796,Quincy Varma,1979-04-28,Female,0050463906,adityasibal@example.org,"H.No. 985
+Tata Marg, Bhalswa Jahangir Pur, Rajasthan - 825698",AOXRW8075S,305774559767,0128209339118038,Current,Rampur - Palla Chowk,ZDJM923289,True
+CUST553604,Aryan Sathe,1974-05-17,Female,+912841822,ukapadia@example.org,"H.No. 496
+Setty Path, Dehradun, Manipur - 302613",JBGKZ9413U,021904068045,3041967682601892,NRI,Aurangabad - Ranganathan Street,KGKA112903,True
+CUST995789,Tanmayi Wason,1947-01-01,Female,0497177933,warinder02@example.net,"H.No. 36
+Gopal Nagar, Saharanpur, Jharkhand - 582441",PMYFO4709M,831997043118,6559243777248135,Salary,Shahjahanpur - Kothari Street,MOEE014894,False
+CUST787610,Jhalak Ratti,1953-09-20,Male,2736814827,bsanghvi@example.org,"269
+Narasimhan Circle, Surat, Tamil Nadu - 526237",CGBYV7854H,052867335513,8417161756313074,Salary,Davanagere - Dara,IQJC576464,True
+CUST514711,Advik Batra,1964-04-08,Female,+918958156,unnikant@example.com,"H.No. 97
+Dayal Path, Gaya, Tamil Nadu - 985837",KQPYL9006B,859141526047,425146374617,Salary,Kochi - Kannan,QOJC515539,True
+CUST717442,Rajeshri Butala,1985-03-08,Male,+917158081,ishwarnadig@example.com,"47/578
+More Road, Saharsa, Uttar Pradesh - 414545",KVOSC9539K,850956348599,8038953485301323,Salary,Asansol - Bhattacharyya Chowk,IUWR655365,False
+CUST930059,Yashoda Jain,1952-08-15,Male,0146941012,libnibanik@example.net,"06
+Ahuja Nagar, Silchar, Assam - 727925",KHBNA8856Q,301017579966,8075963713636712,NRI,Sambalpur - Wagle Street,IAOT884446,True
+CUST215026,Anirudh Dhaliwal,1984-06-11,Other,9210435632,wyatt99@example.org,"83
+Sant Street, Bellary, Haryana - 494609",BSJDV1096A,089188772601,6341461715495200,Savings,Sonipat - Srinivasan Circle,VAIX381931,False
+CUST864052,Samar Grewal,1951-05-18,Female,0385688014,imaran22@example.org,"65, Saha Nagar, Kottayam, Karnataka - 867848",NVBCC9334V,870656496662,110384427049398,Current,Lucknow - Balakrishnan Path,YFHK957919,False
+CUST776171,Utkarsh Nadig,1986-01-15,Female,0392553433,parsavritti@example.net,"10/08
+Ganguly Street, Jalandhar, Uttar Pradesh - 900244",YIXFS0103W,420013024737,69427162533975,Current,Naihati - Lata Zila,YNER110151,False
+CUST418647,Wishi Atwal,1962-03-27,Other,0651618194,advikdash@example.com,"44/73
+Sachar, Ichalkaranji, Goa - 739988",ATVFK8782V,857890061199,526588665263524,Salary,Miryalaguda - Samra,EUGX347535,True
+CUST180280,Zayyan Cheema,1982-03-13,Other,0455465184,neel60@example.com,"H.No. 11
+Bansal Street, Sri Ganganagar, Assam - 697138",IFITP5634H,434259044356,973531269881356,Savings,Vijayawada - Shanker Marg,OLQY794534,True
+CUST307485,Zashil Karnik,1948-09-03,Other,0665289794,veer54@example.org,"H.No. 090, Sankar Street, Anand, Tripura - 991533",CTCEI0135W,136419593455,409627573848,NRI,Nandyal - Warrior Nagar,QFSG786182,True
+CUST511092,Akshay Cheema,1956-08-23,Male,4012999974,nsetty@example.net,"H.No. 961, Sampath Marg, Guna, Goa - 169249",PRPRF6653B,253844591287,36780036651320,Salary,Panvel - Koshy Nagar,XWLE424104,False
+CUST306157,Gauri Gala,1983-06-19,Female,1607853556,ganesankamala@example.org,"27/251, Trivedi Chowk, Nellore, West Bengal - 698097",RNKRR3411B,801365743711,695613549549,Salary,Gangtok - Sabharwal Chowk,OOOU277049,False
+CUST357583,Mohammed Bandi,1986-09-06,Male,+911096544,borahturvi@example.org,"74/491, Mane Nagar, Nanded, Chhattisgarh - 552833",QDZSQ7167S,090266772105,2692864055207285,Current,Kalyan-Dombivli - Mutti Ganj,ENMQ621960,True
+CUST726925,Lakshmi Suri,1995-10-25,Male,+915518801,wardananda@example.net,"60/33
+Raval Marg, Madurai, Chhattisgarh - 313112",UDIZU2279B,176725196836,23748368135996,Savings,Ramgarh - Iyengar Circle,WCUG573704,True
+CUST719886,Wahab Mohanty,1951-08-04,Female,+910638527,samuelkrishnan@example.org,"H.No. 330, Narasimhan Marg, Pallavaram, Gujarat - 770909",GPAOI5762A,241651912262,7080527900689654,NRI,Gudivada - Nadkarni Road,PIKK772067,False
+CUST101109,Kavya Hegde,1968-04-06,Female,+912847649,bsehgal@example.net,"H.No. 90
+Rai, Dewas, Jharkhand - 443046",VBRUZ5234T,381888429656,5479983762414438,Current,Panvel - Bains Path,ISIV858488,False
+CUST494202,Devika Kata,1963-03-06,Other,7661796341,kibeekani@example.net,"443, Goyal Zila, Kurnool, Madhya Pradesh - 420316",SLTVT1804U,724835556797,5029107326200,Salary,Vasai-Virar - Manda Path,OCMJ370701,True
+CUST586601,Manya Aurora,1995-03-05,Other,3652925828,chatreshchaudhari@example.org,"H.No. 44, Krishnan Chowk, Kalyan-Dombivli, Sikkim - 520622",DXAKN1909P,616223054814,86777444122341,NRI,Kadapa - Loyal Zila,XKQS413859,True
+CUST327287,Shivansh Warrior,1974-12-07,Other,0900866601,akshay91@example.org,"H.No. 17
+Shetty Nagar, Cuttack, Assam - 113732",OTSYW0634Z,056001691470,4464282159814369,NRI,Kamarhati - Ganesan Circle,IUNS930945,True
+CUST566484,Ayaan Shenoy,1968-04-25,Female,0254735471,smanda@example.org,"36/432
+Sagar Ganj, Fatehpur, Meghalaya - 502665",HSVFM2841X,560783031810,2382192859454052,NRI,Guwahati - Agarwal Ganj,UAED849611,False
+CUST939721,Daksha D’Alia,2000-07-23,Female,1952862951,handaneha@example.com,"11, Tella Marg, Ongole, Tamil Nadu - 049783",DGVJJ2917M,609504794109,47886029363351,Salary,Guntakal - Nagarajan Chowk,PVXZ594183,True
+CUST563324,Oviya Saraf,2000-12-11,Female,0455884243,dsagar@example.com,"00
+Mammen Zila, Yamunanagar, Maharashtra - 053016",HJNEH2904Y,835816191364,72444589772591,Current,North Dumdum - Loyal Marg,UZQI106119,False
+CUST316884,Balhaar Nagi,1952-04-28,Other,9865559489,jalsa09@example.com,"40/01, Comar Ganj, Kharagpur, Gujarat - 384888",DDLKY8147M,490474305756,06280326310099,NRI,Chittoor - Gaba Ganj,TRNM908924,True
+CUST876497,Jeremiah Vohra,1993-11-29,Other,0439334232,vincent25@example.com,"31, Dugal Zila, Kavali, West Bengal - 763832",SURXM0550T,527313886277,7688631139997,Salary,Cuttack - Vala Street,IHCY610183,True
+CUST486171,Ishanvi Sama,1965-02-25,Other,3992964178,sacharjeevika@example.com,"H.No. 97
+Dugal Marg, Gwalior, Telangana - 510882",QDSVP6189C,017587543375,671586233077,NRI,Secunderabad - Puri Nagar,LFWO107564,True
+CUST182760,Zayan Dada,1996-03-08,Male,0970321767,barkhapall@example.com,"45, Walla Chowk, Pune, Karnataka - 415508",VDFMZ3929G,516841976788,025323478088765,NRI,Tiruvottiyur - Jaggi Street,BZNH643239,True
+CUST668074,Vedant Deo,1959-08-19,Other,+911384697,baljiwanmitter@example.org,"85/54
+Hans Nagar, Mangalore, Andhra Pradesh - 231918",SKEBO4466J,942733252533,7947293553196908,Savings,Munger - Mane Street,VCLY407265,False
+CUST708859,Dipta Acharya,1968-10-01,Female,+916481907,waliishaan@example.org,"178, Bora Street, Solapur, Karnataka - 092559",IHBUK9221A,295552677935,54441751607509,NRI,Deoghar - Mann Ganj,XDNX512186,False
+CUST255350,Jeevika Banerjee,1969-07-19,Female,+912231860,aachalmadan@example.com,"833, Naidu Zila, Medininagar, Chhattisgarh - 882955",IGSAP9990U,979589864453,113174361209,Current,Nangloi Jat - Dutt Path,QEAS791133,True
+CUST299611,Triya Kara,1988-10-11,Female,0975966772,saanvi35@example.org,"89/44, Sahni Zila, Bikaner, Haryana - 785835",AMMYB3957U,243652573813,44664352438143,Savings,Kalyan-Dombivli - Palla Zila,LYAD265301,True
+CUST203602,Brijesh Chakraborty,1996-12-12,Other,0438956534,dugardamini@example.org,"42/326, Sanghvi Zila, Bilaspur, Himachal Pradesh - 870645",NWDEH5832B,878664230437,2696019208905494,NRI,Amravati - Devi,KUNK421251,True
+CUST597672,Balveer Chacko,2006-05-16,Male,0852351422,hemanginithaman@example.com,"H.No. 48
+Oza Street, Chittoor, Telangana - 622111",XHPIS4822M,716688464768,8313194777813217,NRI,Vadodara - Mutti Nagar,QQHQ296656,True
+CUST160178,Tristan Tripathi,1988-05-01,Other,0754624168,diyaminhas@example.org,"690, Shanker Circle, Thrissur, Uttar Pradesh - 856685",EESEW7701R,009085960669,2886696527632,Current,Parbhani - Borah Chowk,MIVF131731,False
+CUST354367,Shaurya Bakshi,1950-07-28,Female,+913384410,mitali45@example.com,"H.No. 189, Khare Path, Madanapalle, Gujarat - 099915",WNNUQ9873Y,058687463052,1991141619199,Savings,Secunderabad - Parmer,RVTY744263,True
+CUST615221,Tara Banerjee,1974-03-18,Female,4803602118,nicholas50@example.com,"H.No. 319, Barad Ganj, Srikakulam, Arunachal Pradesh - 429454",CIQBX8086G,887498899470,6966276769413,Current,Chandigarh - Raju Zila,FMMP528845,True
+CUST584375,Rayaan Acharya,2003-03-05,Other,+918480674,rsangha@example.com,"H.No. 30
+Bail, South Dumdum, Arunachal Pradesh - 359706",HBCOK3224I,129369159359,48135749146365,Current,Tiruvottiyur - Walia Nagar,ZMKC480132,True
+CUST438422,Panini Bhakta,1948-12-13,Female,6035083799,uparsa@example.org,"82/30, Krishna Ganj, Bhiwani, Haryana - 660904",NHADT5019L,838899482584,3710371792617423,Current,Tadipatri - Natt Zila,UHSD309351,False
+CUST956990,Yashasvi Bains,1978-08-10,Other,+917919227,beraanvi@example.com,"H.No. 084
+Dash, Srinagar, Goa - 987358",VNHJU3754B,220906255780,3069309073274546,Current,Bhagalpur - Ganguly Ganj,QZZD218188,True
+CUST476696,Hamsini Soman,1997-10-28,Female,0687059495,batrajasmit@example.net,"H.No. 22, Kumer, Begusarai, West Bengal - 538538",WYLCJ9191Y,666582404975,628475649443875,NRI,Ramgarh - Bains Path,STSX126045,False
+CUST663076,Triya Nori,1972-07-26,Other,6886615666,abhimanyu26@example.org,"08
+Dash Chowk, Howrah, Goa - 985224",RSFGB0872A,910691826041,1795459126270511,NRI,Faridabad - Bhargava Nagar,PPZQ748755,False
+CUST968139,Brinda Lanka,1950-04-01,Other,+918981387,jhalak64@example.org,"H.No. 51, Raman Street, Kishanganj, Haryana - 562001",UZAYB2033Y,662244620931,491148587881941,Salary,Visakhapatnam - Mittal Street,MDWU809885,False
+CUST563879,Leena Bora,1997-12-02,Other,0376011033,sarnavyanjana@example.net,"12/01
+Dada Marg, Avadi, Manipur - 524265",PQMLO0644M,865383484820,66935606245278,Salary,Phusro - Randhawa Zila,VRJX044946,True
+CUST504447,Varsha Sani,1988-09-16,Male,3817545268,sarthakbansal@example.net,"69/22
+Kadakia Chowk, Hyderabad, Maharashtra - 774514",ULKRI0411N,530645645559,8636540468591823,Salary,Bhimavaram - Karan Street,QSKW979358,False
+CUST742887,Prisha Ravi,1977-12-19,Female,+914394395,dhingrariya@example.net,"29, Choudhry Circle, Thanjavur, Uttarakhand - 087564",UOIXP0454O,553349484851,815674597754,Current,Bhatpara - Raja Street,ELZT239940,True
+CUST551330,Gabriel Dube,1979-06-16,Female,0228250405,kannanraagini@example.org,"21/03
+Goswami Circle, Belgaum, Arunachal Pradesh - 375480",WFHVF5785L,313570241578,777683741893,Salary,Vasai-Virar - Bedi Ganj,NOER609087,True
+CUST822352,Banjeet Khurana,1966-04-26,Male,+912217610,dkanda@example.com,"H.No. 39
+Kanda Chowk, Ambala, West Bengal - 798748",QLCNT0257S,267422290163,278025814906697,Current,Tiruvottiyur - Sehgal Nagar,JUZR884193,True
+CUST103196,Avi Lal,1962-05-26,Male,+910517841,ayushmanbedi@example.net,"05, Majumdar Ganj, Singrauli, Punjab - 513938",WJNSA0919Y,885330920814,536110055511,Current,Tumkur - Sidhu Circle,OYHE671242,True
+CUST148554,Bhavya Tata,1954-12-30,Other,+916370115,qcherian@example.net,"97
+Dass Nagar, Rampur, Arunachal Pradesh - 185460",JTWDM3605D,530212975611,02825059169536,NRI,Vasai-Virar - Tara Zila,AFRE537276,False
+CUST491902,Abhimanyu Prabhakar,1994-05-07,Other,0044637810,yuvraj16@example.net,"41/34, Chawla, Haridwar, Odisha - 213808",KWOYC3903A,667355547056,168338088013452,Current,Sagar - Chandran Circle,CJBU941298,True
+CUST473698,Saanvi Agarwal,1953-09-21,Other,6755189653,dakshesh52@example.org,"26/07
+Bath Nagar, Arrah, Karnataka - 632212",STIVI9422B,895446109500,2157672414019118,Current,Amravati - Ray Marg,JFUE480292,False
+CUST121027,Samuel Toor,1989-10-17,Other,0984718092,wishikannan@example.net,"H.No. 977, Sura Ganj, Mathura, Karnataka - 410943",GQOYD9672P,787323374177,9223586369576236,Savings,Ambarnath - Pandit Zila,MRWN602781,False
+CUST970007,Chakradev Biswas,1967-03-08,Male,+913380182,bhardwajchameli@example.org,"30/082, Sant Ganj, Mumbai, Nagaland - 203351",LGQBR1839K,598851489299,5068051576190,Savings,Kozhikode - Rama Path,VVPP014057,True
+CUST519133,Kabir Srinivasan,1988-02-11,Other,+916022565,kibenikita@example.com,"55/66
+Sachdev, Raichur, Andhra Pradesh - 447747",IEWEV0861N,520420313933,2741488849841,Salary,Bhavnagar - Kala Street,MFHH658011,True
+CUST483755,Chatura Sarma,1973-03-30,Male,+916380894,jaggiwarinder@example.net,"64/586, Bora Ganj, Pimpri-Chinchwad, Kerala - 578699",VXXAR6208A,186036295047,923576953651,Salary,Pune - Varty Road,HMYH983100,True
+CUST533104,Charan Dara,2004-11-05,Female,5701865246,njoshi@example.org,"50/44
+Varma Ganj, Jabalpur, Jharkhand - 022659",PTECY4759F,643804838390,084750075823258,NRI,Bhiwandi - Nagarajan Ganj,HIFW512066,True
+CUST864546,Ayushman Gour,2000-10-29,Female,0560252931,nsibal@example.com,"27/070, Kar Marg, Bilaspur, Telangana - 530152",CNEBW2199P,334330836688,2124343202540404,Savings,Patna - Bassi Ganj,XXJM625174,False
+CUST698070,Ekantika Raja,1951-09-18,Female,0185628102,pallhenry@example.org,"28/453
+Lal Road, Asansol, Karnataka - 743598",PVJGF0358B,515801601425,511160160917130,Savings,Durg - Ghose Chowk,DACQ381659,True
+CUST546267,Vedant Magar,1999-08-18,Female,+911345554,yashasvi78@example.net,"H.No. 821, Wadhwa Path, Danapur, Nagaland - 505918",UIAOP2443X,189621511077,2781452255982667,Savings,Ulhasnagar - Sunder Path,FXIB555894,False
+CUST345025,Vedant Gaba,1951-12-06,Other,+918298997,fdutta@example.net,"H.No. 09, Cherian Zila, Nanded, Himachal Pradesh - 233682",LNXXZ8050V,751176749789,431710442836457,Current,Nellore - Apte Street,UBCK935335,False
+CUST886182,Vasudha Sheth,1999-05-24,Other,7805224785,chaitanya93@example.net,"76
+Nigam Road, Bulandshahr, Himachal Pradesh - 800792",ZWGIG1138B,135498405140,519200995162710,Current,Mango - Ramakrishnan Road,TFKC411492,False
+CUST577558,Reva Badal,1975-08-19,Male,0106511617,nagaryash@example.org,"86/28
+Chaudhary Chowk, Bikaner, Uttarakhand - 472547",ITFSY0881L,090319291316,329719263183,NRI,Malegaon - Rana Circle,RCYO133213,False
+CUST934497,Eesha Tank,1974-09-09,Female,+914221170,bathdamini@example.com,"H.No. 551
+Sant Marg, Cuttack, Chhattisgarh - 994515",EXZZX9760R,276615241384,7852064216791045,Savings,Agra - Raval Nagar,DGPF159161,True
+CUST406873,Keya Nazareth,1957-01-22,Other,+915480999,qabil47@example.org,"H.No. 886
+Soman Ganj, Bhopal, Manipur - 324503",JIHDR2124V,778906288637,9722603960582,Savings,Karimnagar - Dora Circle,QAUQ169467,False
+CUST554600,Aadhya Bandi,2006-11-25,Female,0260052455,william23@example.com,"H.No. 134, Sengupta Road, Kishanganj, Goa - 467683",KNHPS7791C,598321922367,2291441828259,Current,Kanpur - Ghosh Zila,LWBX483176,False
+CUST968684,Gabriel Chaudhari,1965-04-11,Male,0875023088,imaranvenkatesh@example.net,"26/386, Roy Street, Bhusawal, Haryana - 746376",PLCNU5587V,948011052257,2139558986181,Salary,Meerut - Soman Nagar,SZHU000486,True
+CUST463544,Qadim Divan,1967-02-26,Other,+914479141,lukethaker@example.org,"H.No. 18
+Dayal Chowk, Ambattur, Bihar - 541661",CGMBQ7054H,978206516148,69464172370220,Savings,Panchkula - Nagi Circle,OHPF765882,True
+CUST286679,Yasti Vasa,1954-06-21,Male,0668767318,menonekavir@example.org,"79/22, Mannan Marg, Amravati, Nagaland - 463218",CTGPY6374S,816602441145,28141936127582,Salary,Chinsurah - Bhatt,KPPQ291884,True
+CUST276715,Daksha Kar,1995-05-20,Female,0804215670,tgill@example.net,"87/512
+Nanda Ganj, Karnal, Mizoram - 590964",XNPWR2445V,133220624790,241781590368,Salary,Surat - Muni Path,KYWY221929,True
+CUST206239,Timothy Rana,1993-10-11,Male,0291026764,pahal49@example.org,"60
+Gola Path, Miryalaguda, Karnataka - 294215",VXUUT3660I,552144337975,116153790942036,Salary,Panchkula - Johal Chowk,JAZO986367,True
+CUST138137,Baghyawati Wason,2000-12-06,Other,0207365210,andrew43@example.net,"H.No. 870
+Keer Marg, Mangalore, Karnataka - 793405",YKEZU4120U,759067900528,753433493637,NRI,Singrauli - Mallick Chowk,SJYJ171622,False
+CUST996202,Agastya Parsa,1980-02-09,Male,8032833421,dominic65@example.net,"H.No. 676
+Ahluwalia Circle, Giridih, Telangana - 875150",YYRLM7268M,320663483781,731254476705474,Current,Parbhani - Khanna Marg,TEEM961945,False
+CUST834892,Isha Agrawal,1992-11-21,Female,0500801611,riya99@example.net,"72, Sankaran Marg, Gandhidham, Rajasthan - 800185",QEBEZ5411F,439033140057,8965238608966,Current,Ratlam - Bahri Marg,MYSL992846,False
+CUST699801,Kiaan Rajagopalan,1954-05-06,Other,+913814356,nathan40@example.org,"12/346
+Shroff Road, Uluberia, Chhattisgarh - 593242",KABND9575X,450572070910,8428493357042741,Current,Satna - Chandra,FDWN911802,True
+CUST270016,Amara Issac,1992-01-06,Male,8473557785,dsampath@example.net,"H.No. 328
+Wali Nagar, Bokaro, Manipur - 154898",PRXVC2811F,493712552464,7568419517851,Current,Allahabad - Sen Circle,VZJK906600,True
+CUST188467,Chavvi Patel,1972-04-20,Female,0199519357,diptade@example.com,"H.No. 205, Divan Marg, Aurangabad, Rajasthan - 738410",RDFBN9955K,319997968351,84097063999152,NRI,Serampore - Bhandari Circle,IJSA745424,False
+CUST616644,Ikshita Dass,1947-09-03,Female,0056858185,ishaloyal@example.com,"H.No. 33, Dash Road, Kochi, Uttar Pradesh - 677182",OEHJO2741E,824067787666,7844762130561,Savings,Guntakal - Sagar Road,YFGY127158,True
+CUST355457,Girish Sibal,1955-10-13,Male,+912467618,qushi49@example.org,"68, Bansal Ganj, Bally, Manipur - 767498",RXDPT9040Q,127727138489,936482919905,Savings,North Dumdum - Sur Ganj,NPSX579445,True
+CUST698128,Kashish Deep,2006-10-23,Other,+916600752,manimegha@example.net,"61
+Oza, Begusarai, Jharkhand - 613550",USCCG5271O,613237728831,4907505111660,Salary,Chittoor - Salvi Nagar,MWIZ246184,True
+CUST245890,Amol Saini,1954-03-10,Male,2912665779,achawla@example.net,"734, Wali Marg, Kishanganj, Andhra Pradesh - 694899",TWYMU7549B,175490546758,493491094605280,Savings,Howrah - Shukla Path,CCII347627,False
+CUST156588,Idika Kamdar,1961-02-04,Male,2236434396,janakikashyap@example.net,"67, Patel Marg, Durgapur, Kerala - 361395",VIJIK8232O,954184551476,03111296678576,Salary,Miryalaguda - Buch Chowk,GAGA962844,True
+CUST211519,Chakradhar Issac,1947-08-27,Female,+916679294,virkshravya@example.org,"H.No. 707, Nori Road, Farrukhabad, Mizoram - 834708",LGPHY9066T,097704260702,0671820535590,Salary,Haridwar - Gera,ETRZ424768,False
+CUST723353,Balvan Modi,1952-03-12,Male,2507610229,sanayadevi@example.com,"H.No. 147
+Handa Marg, Bhusawal, Bihar - 502963",NBLAH9699A,870935607864,008393569303,NRI,Sasaram - Ray Ganj,DVFF067215,True
+CUST368496,Oeshi Om,1949-09-28,Other,1760102551,wyattkarpe@example.net,"46
+Mital Chowk, Unnao, Uttarakhand - 871927",YUPMF1731X,256536475503,6506294895709,NRI,Pimpri-Chinchwad - Patla Marg,CXCR870556,False

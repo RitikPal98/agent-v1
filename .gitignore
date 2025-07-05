@@ -82,3 +82,6 @@ Thumbs.db
 # Logs
 logs/
 *.log
+
+dataset_requirements.txt
+generate_dataset.py
